@@ -137,7 +137,9 @@ class Data {
     ),
   ];
 
+  // Left Column - Core Expertise
   static List<String> mobileTechnologies = [
+    "━━━━━ AI & Machine Learning ━━━━━",
     "Generative AI",
     "RAG Systems",
     "Large Language Models (LLMs)",
@@ -148,6 +150,8 @@ class Data {
     "Geospatial & GPS Validation",
     "Feature Engineering",
     "Model Evaluation",
+    "",
+    "━━━━━ Programming Languages ━━━━━",
     "Python",
     "Java",
     "JavaScript / TypeScript",
@@ -155,20 +159,28 @@ class Data {
     "SQL",
     "C++",
     "R",
-  ];
-
-  static List<String> otherTechnologies = [
+    "",
+    "━━━━━ Frameworks & Development ━━━━━",
     "Flutter (Bloc)",
     "React",
     "Tailwind CSS",
     "Node.js (Express)",
     "Flask",
+  ];
+
+  // Right Column - Technical Stack & Tools
+  static List<String> otherTechnologies = [
+    "━━━━━ Databases & Storage ━━━━━",
     "PostgreSQL (Supabase)",
     "Vector Databases",
+    "",
+    "━━━━━ Cloud & DevOps ━━━━━",
     "AWS",
     "Google Cloud",
     "Docker",
     "CI/CD (Basics)",
+    "",
+    "━━━━━ Tools & Platforms ━━━━━",
     "Git & GitHub",
     "VS Code",
     "IntelliJ",
@@ -180,6 +192,8 @@ class Data {
     "WordPress",
     "Figma",
     "LaTeX",
+    "",
+    "━━━━━ Professional Skills ━━━━━",
     "Problem-Solving",
     "Collaboration",
     "Leadership",

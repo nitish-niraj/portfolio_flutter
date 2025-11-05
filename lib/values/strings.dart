@@ -74,8 +74,8 @@ class StringConst {
   static const String ABOUT_DEV_STORY_CONTENT_3 =
       "Outside of engineering, I enjoy exploring creativity through photography, where I get to enhance my sense of composition, aesthetics, and attention to detail-all qualities that find a way to blend into clean design and far better user experiences. In my spare time, I enjoy building side-projects, contributing to open-source, and continuously learning to stay ahead of innovation.";
   static const String ABOUT_DEV_TECHNOLOGY = "Technology";
-  static const String MOBILE_TECH = "AI/ML & Programming Languages";
-  static const String OTHER_TECH = "Frameworks, Tools & Professional Skills";
+  static const String MOBILE_TECH = "Core Expertise";
+  static const String OTHER_TECH = "Technical Stack & Tools";
   static const String ABOUT_DEV_TECHNOLOGY_TITLE = "What I use.";
   static const String ABOUT_DEV_TECHNOLOGY_CONTENT =
       "I use a number of tools to aid my creative process when bringing things to life. Listed below are the tools and technologies that I have used over the years.";
