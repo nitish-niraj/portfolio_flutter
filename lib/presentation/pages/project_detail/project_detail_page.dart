@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:nitish_kumar_portfolio/core/layout/adaptive.dart';
 import 'package:nitish_kumar_portfolio/core/utils/functions.dart';
 import 'package:nitish_kumar_portfolio/presentation/pages/project_detail/widgets/about_project.dart';
@@ -85,15 +86,26 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
     super.dispose();
   }
 
-  ProjectDetailArguments getArguments() {
-    projectDetails =
-        ModalRoute.of(context)!.settings.arguments as ProjectDetailArguments;
+  ProjectDetailArguments? getArguments() {
+    final args = ModalRoute.of(context)!.settings.arguments;
+    if (args == null) {
+      // Redirect to home page if no arguments provided
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        Navigator.of(context).pushReplacementNamed(StringConst.HOME_PAGE);
+      });
+      return null;
+    }
+    projectDetails = args as ProjectDetailArguments;
     return projectDetails;
   }
 
   @override
   Widget build(BuildContext context) {
-    getArguments();
+    final args = getArguments();
+    if (args == null) {
+      // Return empty container while redirecting
+      return Container();
+    }
     TextTheme textTheme = Theme.of(context).textTheme;
     TextStyle? coverTitleStyle = textTheme.displayMedium?.copyWith(
       color: AppColors.white,
@@ -143,37 +155,68 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
             height: heightOfScreen(context),
             child: Stack(
               children: [
-                Image.asset(
-                  projectDetails.data.coverUrl,
-                  fit: BoxFit.cover,
+                // Blurred background image
+                ClipRect(
+                  child: ImageFiltered(
+                    imageFilter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+                    child: Image.asset(
+                      projectDetails.data.coverUrl,
+                      fit: BoxFit.cover,
+                      width: widthOfScreen(context),
+                      height: heightOfScreen(context),
+                    ),
+                  ),
+                ),
+                // Dark overlay to enhance text visibility
+                Container(
                   width: widthOfScreen(context),
                   height: heightOfScreen(context),
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Colors.black.withOpacity(0.0),
+                        Colors.black.withOpacity(0.3),
+                      ],
+                    ),
+                  ),
                 ),
                 Container(
                   margin: EdgeInsets.only(bottom: waveLineHeight + 40),
+                  padding: EdgeInsets.symmetric(horizontal: 40),
                   child: Align(
                     alignment: Alignment.bottomCenter,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        AnimatedTextSlideBoxTransition(
-                          controller: _controller,
-                          widthFactor: 1.20,
-                          text: "${projectDetails.data.title}.",
-                          coverColor: projectDetails.data.primaryColor,
-                          textStyle: coverTitleStyle,
-                          textAlign: TextAlign.center,
-                        ),
-                        SpaceH20(),
-                        AnimatedTextSlideBoxTransition(
-                          controller: _controller,
-                          widthFactor: 1.20,
-                          text: projectDetails.data.category,
-                          coverColor: projectDetails.data.primaryColor,
-                          textStyle: coverSubtitleStyle,
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
+                    child: Container(
+                      padding: EdgeInsets.symmetric(horizontal: 40, vertical: 30),
+                      decoration: BoxDecoration(
+                        color: Colors.black.withOpacity(0.4),
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          AnimatedTextSlideBoxTransition(
+                            controller: _controller,
+                            widthFactor: 1.20,
+                            text: "${projectDetails.data.title}.",
+                            coverColor: Colors.transparent,
+                            boxColor: Colors.transparent,
+                            textStyle: coverTitleStyle,
+                            textAlign: TextAlign.center,
+                          ),
+                          SpaceH20(),
+                          AnimatedTextSlideBoxTransition(
+                            controller: _controller,
+                            widthFactor: 1.20,
+                            text: projectDetails.data.category,
+                            coverColor: Colors.transparent,
+                            boxColor: Colors.transparent,
+                            textStyle: coverSubtitleStyle,
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -248,14 +291,52 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
 
   List<Widget> _buildProjectAlbum(List<String> data) {
     List<Widget> items = [];
+    double screenWidth = widthOfScreen(context);
+    double maxImageWidth = screenWidth > 1200 ? 1000 : screenWidth * 0.85;
 
     for (int index = 0; index < data.length; index++) {
       items.add(
-        Image.asset(
-          data[index],
-          fit: BoxFit.cover,
+        Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: responsiveSize(
+              context,
+              assignWidth(context, 0.05),
+              assignWidth(context, 0.15),
+            ),
+            vertical: 20,
+          ),
+          child: Center(
+            child: Container(
+              constraints: BoxConstraints(
+                maxWidth: maxImageWidth,
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withOpacity(0.1),
+                    blurRadius: 20,
+                    offset: Offset(0, 10),
+                  ),
+                ],
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(16),
+                child: Image.asset(
+                  data[index],
+                  fit: BoxFit.contain,
+                  width: maxImageWidth,
+                ),
+              ),
+            ),
+          ),
         ),
       );
+      
+      // Add spacing between images except for the last one
+      if (index < data.length - 1) {
+        items.add(SizedBox(height: 40));
+      }
     }
 
     return items;

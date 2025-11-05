@@ -105,38 +105,41 @@ class ImagePath {
       "$projectsDir/roam/wireframes_signup_login.jpeg";
 
 
-  // Disney
-  static const String DISNEY_PLUS_COVER =
-      "$projectsDir/disneyplus/disneyplus_cover.png";
-  static const String DISNEY_PLUS_SCREENS =
-      "$projectsDir/disneyplus/mockups.png";
+  // PhotoGuard
+  static const String PHOTO_GUARD_COVER =
+      "$projectsDir/photoguard/2.1.jpg";
+  static const String PHOTO_GUARD_SCREENS =
+      "$projectsDir/photoguard/2.1.jpg";
 
-  static const String DISNEY_PLUS_1 =
-      "$projectsDir/disneyplus/disneyplus_header.png";
-  static const String DISNEY_PLUS_2 =
-      "$projectsDir/disneyplus/disneyplus_cover.png";
-  static const String DISNEY_PLUS_3 =
-      "$projectsDir/disneyplus/disneyplus_description.png";
-  static const String DISNEY_PLUS_4 =
-      "$projectsDir/disneyplus/disneyplus_theme.png";
-  static const String DISNEY_PLUS_5 =
-      "$projectsDir/disneyplus/disneyplus_mockups.png";
-  static const String DISNEY_PLUS_6 =
-      "$projectsDir/disneyplus/disneyplus_designs.png";
-  static const String DISNEY_PLUS_7 =
-      "$projectsDir/disneyplus/disneyplus_more_description.png";
-  static const String DISNEY_PLUS_8 =
-      "$projectsDir/disneyplus/disneyplus_downloads_feature.png";
-  static const String DISNEY_PLUS_9 =
-      "$projectsDir/disneyplus/disneyplus_great_menu.png";
-  static const String DISNEY_PLUS_10 =
-      "$projectsDir/disneyplus/disneyplus_profiles.png";
-  static const String DISNEY_PLUS_11 =
-      "$projectsDir/disneyplus/disneyplus_home.png";
-  static const String DISNEY_PLUS_12 =
-      "$projectsDir/disneyplus/disneyplus_components.png";
-  static const String DISNEY_PLUS_13 =
-      "$projectsDir/disneyplus/disneyplus_the_end.png";
+  static const String PHOTO_GUARD_1 =
+      "$projectsDir/photoguard/2.1.jpg";
+  static const String PHOTO_GUARD_2 =
+      "$projectsDir/photoguard/2.2.jpg";
+  static const String PHOTO_GUARD_3 =
+      "$projectsDir/photoguard/2.3.jpg";
+  static const String PHOTO_GUARD_4 =
+      "$projectsDir/photoguard/image (3).jpg";
+  static const String PHOTO_GUARD_5 =
+      "$projectsDir/photoguard/Screenshot 2025-11-03 215948.png";
+
+  // GPS Verifier
+  static const String GPS_VERIFIER_COVER =
+      "$projectsDir/gpsverifier/Screenshot 2025-11-06 022047.png";
+  static const String GPS_VERIFIER_SCREENS =
+      "$projectsDir/gpsverifier/Screenshot 2025-11-06 022047.png";
+
+  static const String GPS_VERIFIER_1 =
+      "$projectsDir/gpsverifier/Screenshot 2025-11-06 022047.png";
+  static const String GPS_VERIFIER_2 =
+      "$projectsDir/gpsverifier/Screenshot 2025-11-06 022156.png";
+  static const String GPS_VERIFIER_3 =
+      "$projectsDir/gpsverifier/Screenshot 2025-11-06 022235.png";
+  static const String GPS_VERIFIER_4 =
+      "$projectsDir/gpsverifier/Screenshot 2025-11-06 022319.png";
+  static const String GPS_VERIFIER_5 =
+      "$projectsDir/gpsverifier/Screenshot 2025-11-06 023013.png";
+  static const String GPS_VERIFIER_6 =
+      "$projectsDir/gpsverifier/Screenshot 2025-11-06 023024.png";
 
 
   // Flutter Catalog

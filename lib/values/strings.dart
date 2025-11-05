@@ -87,7 +87,7 @@ class StringConst {
   static const String FAMOUS_QUOTE_AUTHOR = "Albert Einstein";
   static const String WORK_TOGETHER = "Let's work together.";
   static const String AVAILABLE_FOR_FREELANCE =
-      "I'm available for Consultancy & Freelancing.";
+      "I'm available for Freelancing.";
   static const String SAY_HELLO = "Say Hello";
 
   // Works Page
@@ -217,55 +217,63 @@ class StringConst {
   static const String CURRENT_MONTH_YEAR = "May 2020 - Current";
   static const String STARTED_MONTH_YEAR = "May 2017";
 
-  static const String COMPANY_2 = "Shrinq";
-  static const String COMPANY_2_URL = "https://shrinqghana.com/";
-  static const String POSITION_2 = "Software Engineer";
+  static const String COMPANY_2 = "HealTether Healthcare Services Private Ltd";
+  static const String COMPANY_2_URL = "https://www.healtether.com/";
+  static const String POSITION_2 = "Flutter Application Development Intern";
   static const String COMPANY_2_ROLE_1 =
-      "Built a mobile app to track the status of all requested fibre broadband for Vodafone Ghana using Java Android.";
+      "Designed and developed UIs for a healthcare app using Flutter, improving user satisfaction by 27%.";
   static const String COMPANY_2_ROLE_2 =
-      "Worked on a team of 2 to build an ID verification application using Java Android.";
+      "Implemented UI components based on design mock-ups, enhancing accessibility and responsiveness, reducing user complaints by approx 15%.";
   static const String COMPANY_2_ROLE_3 =
-      "Developed and maintained client & in-house projects primarily using Javascript, React js, Next js, Express and Node js";
-  static const String LOCATION_2 = "Asylum Down - Accra";
-  static const String DURATION_2 = "April 2018 - June 2019";
+      "Collaborated on the development of a design system that streamlined the workflow for 3+ developers and designers, enabling quicker turnaround times for UI updates and improving team efficiency by 30%.";
+  static const String COMPANY_2_ROLE_4 =
+      "Conducted usability testing and implemented feedback, increasing task completion rates by approx 25%.";
+  static const String LOCATION_2 = "Remote";
+  static const String DURATION_2 = "November 2023 - January 2024";
 
-  static const String COMPANY_3 = "Bewsys";
-  static const String COMPANY_3_URL = "https://bewsys.com/";
-  static const String POSITION_3 = "Software Engineer";
+  static const String COMPANY_3 = "Career Guidance, Training & Placement Cell (CGTPC), Banaras Hindu University";
+  static const String COMPANY_3_URL = "https://www.bhu.ac.in/";
+  static const String POSITION_3 = "Placement Coordinator";
   static const String COMPANY_3_ROLE_1 =
-      "Worked in a team of 3 to design and implement backend infrastructure of an inmate management system for the National Prison of South Sudan.";
+      "Coordinated with recruiters across multiple domains—agriculture, finance, technology, and more—along with 16 faculties, 132 departments, 5 interdisciplinary schools, and over 25,000 students to facilitate campus placement activities.";
   static const String COMPANY_3_ROLE_2 =
-      "Architected and implemented a mobile application for the Palestinian Agriculture Advisory System.";
+      "Assisted in organizing pre-placement talks, recruitment drives, and training sessions. Supported students with career guidance, resume preparation, and interview readiness.";
   static const String COMPANY_3_ROLE_3 =
-      "Modified existing software to correct errors, upgrade interfaces and improve performance.";
-  static const String LOCATION_3 = "East Legon - Accra";
-  static const String DURATION_3 = "August 2019 - April 2020";
+      "Streamlined placement processes, ensuring smooth communication between all stakeholders. Contributed to strengthening industry–academia relations to enhance placement opportunities.";
+  static const String COMPANY_3_ROLE_4 =
+      "Developed internal automation systems to improve coordination and efficiency within the placement cell.";
+  static const String LOCATION_3 = "Varanasi, Uttar Pradesh, India";
+  static const String DURATION_3 = "October 2023 - August 2024";
 
 
-  static const String COMPANY_4 = "Brij Money";
-  static const String COMPANY_4_URL = "https://www.brij.money/";
-  static const String POSITION_4 = "Software Engineer Intern";
+  static const String COMPANY_4 = "FRUITFUSION ADVISORY LLP (Zen Learn)";
+  static const String COMPANY_4_URL = "https://zenlearn.in/";
+  static const String POSITION_4 = "Tech Specialist Intern";
   static const String COMPANY_4_ROLE_1 =
-      "Worked closely with designers & backend engineers to develop and ship merchants feature which allowed end users to purchase items from a merchant store on the Brij app.";
+      "Led an open-source project using the Big Five Personality Traits model, deployed on AWS for scalable assessments.";
   static const String COMPANY_4_ROLE_2 =
-      "Developed and shipped airtime & bundle purchasing feature on the Brij mobile app.";
+      "Engineered a RAG system for a doubt-solving chatbot with Meta's Llama 3.0, cutting query resolution time by 40%.";
   static const String COMPANY_4_ROLE_3 =
-      "Interfaced with user experience designers and other developers to ensure thoughtful and coherent user experiences across brij’s iOS and Android mobile apps.";
-  static const String LOCATION_4 = "Accra - Ghana";
-  static const String DURATION_4 = "June 2021 - Aug 2021";
+      "Created and customized over 5 specialized GPT models for various internal applications, enhancing functionality and efficiency across different projects.";
+  static const String COMPANY_4_ROLE_4 =
+      "Optimized Moodle's UI for a more intuitive learning experience, leading to a 25% increase in user interaction with the platform.";
+  static const String COMPANY_4_ROLE_5 =
+      "Led a financial simulation project with a four-member team, developing an interactive learning tool using HTML, CSS, JavaScript, and Flask that improved learners' situational understanding by 35%.";
+  static const String LOCATION_4 = "Remote";
+  static const String DURATION_4 = "July 2024 - November 2024";
 
 
-  static const String COMPANY_5 = "Consultant";
-  static const String COMPANY_5_URL = SITE_URL;
-  static const String POSITION_5 = "Software Engineer Consultant";
+  static const String COMPANY_5 = "FRUITFUSION ADVISORY LLP (Zen Learn)";
+  static const String COMPANY_5_URL = "https://zenlearn.in/";
+  static const String POSITION_5 = "Tech Specialist Intern";
   static const String COMPANY_5_ROLE_1 =
-      "Led engineering team to develop & ship a SaaS grid monitoring mobile application platform for Hive Power company in Switzerland.";
+      "Led an open-source project using the Big Five Personality Traits model, deployed on AWS for scalable assessments.";
   static const String COMPANY_5_ROLE_2 =
-      "Designed and built technology infrastructure for a leading Ghanaian Insurance company";
+      "Engineered a RAG system for a doubt-solving chatbot with Meta's Llama 3.0, cutting query resolution time by 40%.";
   static const String COMPANY_5_ROLE_3 =
-      "Worked with GoFlow Services in India to improve the architecture of an already existing video streaming mobile application (BeThere).";
-  static const String LOCATION_5 = "Kigali - Rwanda";
-  static const String DURATION_5 = "May 2020 - Sept 2022";
+      "Created and customized over 5 specialized GPT models for various internal applications, enhancing functionality and efficiency across different projects.";
+  static const String LOCATION_5 = "Remote";
+  static const String DURATION_5 = "July 2024 - November 2024";
 
   //Portfolio, Projects
   static const String PORTFOLIO_SITE_V2 = "Aerium V2";
@@ -352,16 +360,27 @@ class StringConst {
   static const String OTP_TEXT_FIELD_WEB_URL =
       "https://pub.dev/packages/flutter_otp_text_field";
 
-  static const String DISNEY_PLUS = "Disney Plus";
-  static const String DISNEY_PLUS_PLATFORM = "Android.";
-  static const String DISNEY_PLUS_CATEGORY = "UI Kit.";
-  static const String DISNEY_PLUS_SUBTITLE =
-      "Disney+, But Better";
-  static const String DISNEY_PLUS_DETAIL =
-      "Disney Plus is an amazing UI Kit  designed by Andre Carioca. He describes the UI Kit as his attempt of making the current disney plus app better. For me, this project is my attempt at learning and playing with Jetpack Compose. It contains everything that I am learning about the current state of native android development with Kotlin & Jetpack Compose";
-  static const String DISNEY_PLUS_PLAYSTORE_URL = "";
-  static const String DISNEY_PLUS_GITHUB_URL =
-      "https://github.com/nitish-niraj/disneyPlus";
+  static const String PHOTO_GUARD = "PhotoGuard";
+  static const String PHOTO_GUARD_PLATFORM = "REST API / Mobile Backend";
+  static const String PHOTO_GUARD_CATEGORY = "AI/ML Project";
+  static const String PHOTO_GUARD_SUBTITLE =
+      "Intelligent Mobile Photo Validation API";
+  static const String PHOTO_GUARD_DETAIL =
+      "PhotoGuard is an intelligent mobile photo validation API designed for civic documentation. It provides real-time quality control via a REST API that scores photos based on a comprehensive weighted pipeline: Blur Detection (25%), Resolution Analysis (25%), Brightness Assessment (20%), Exposure Evaluation (15%), and Metadata Verification (15%). The system uses a 65% pass threshold with partial credit scoring to maintain an optimal 35-40% acceptance rate, ensuring only high-quality civic documentation photos are approved. Built with Python, OpenCV, and machine learning algorithms for robust image quality assessment.";
+  static const String PHOTO_GUARD_PLAYSTORE_URL = "";
+  static const String PHOTO_GUARD_GITHUB_URL =
+      "https://github.com/nitish-niraj/photoguard";
+
+  static const String GPS_VERIFIER = "GPS Verifier";
+  static const String GPS_VERIFIER_PLATFORM = "Python / Computer Vision";
+  static const String GPS_VERIFIER_CATEGORY = "AI/ML Project";
+  static const String GPS_VERIFIER_SUBTITLE =
+      "Modern, multi-method GPS validation system for LPU campus";
+  static const String GPS_VERIFIER_DETAIL =
+      "GPS Verifier is a modern, multi-method GPS validation system designed for Lovely Professional University (LPU) campus. This sophisticated system extracts GPS coordinates from images using multiple techniques including EXIF data extraction, OCR (Optical Character Recognition), pattern recognition, and WhatsApp overlay detection. The extracted coordinates are then validated against predefined campus boundaries to ensure location authenticity. Built with Python, OpenCV, and advanced computer vision algorithms, GPS Verifier provides a robust solution for location verification in educational institutions.";
+  static const String GPS_VERIFIER_PLAYSTORE_URL = "";
+  static const String GPS_VERIFIER_GITHUB_URL =
+      "https://github.com/nitish-niraj/GPS-verification";
 
   static const String FLUTTER_CATALOG = "Flutter Catalog";
   static const String FLUTTER_CATALOG_PLATFORM = "Android / IOS.";

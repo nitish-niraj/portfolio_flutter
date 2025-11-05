@@ -13,6 +13,7 @@ import 'package:nitish_kumar_portfolio/presentation/widgets/spaces.dart';
 import 'package:nitish_kumar_portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../injection_container.dart';
 
@@ -71,19 +72,80 @@ class _ContactPageState extends State<ContactPage>
     return _nameFilled && _subjectFilled && _messageFilled && _emailFilled;
   }
 
-  void sendEmail() {
+  void sendEmail() async {
     if (isFormValid()) {
       setState(() {
         isSendingEmail = true;
       });
-      emailBloc.add(
-        SendEmail(
-          name: _nameController.text,
-          email: _emailController.text,
-          subject: _subjectController.text,
-          message: _messageController.text,
-        ),
+      
+      // Use mailto link instead of API
+      final Uri emailUri = Uri(
+        scheme: 'mailto',
+        path: StringConst.DEV_EMAIL,
+        query: 'subject=${Uri.encodeComponent(_subjectController.text)}&body=${Uri.encodeComponent('Name: ${_nameController.text}\nEmail: ${_emailController.text}\n\nMessage:\n${_messageController.text}')}',
       );
+      
+      try {
+        // Try to launch email client
+        if (await canLaunchUrl(emailUri)) {
+          await launchUrl(emailUri);
+          setState(() {
+            isSendingEmail = false;
+          });
+          clearText();
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              backgroundColor: AppColors.white,
+              content: Text(
+                'Opening your email client...',
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  fontSize: Sizes.TEXT_SIZE_16,
+                  color: AppColors.black,
+                ),
+              ),
+              duration: Animations.emailSnackBarDuration,
+            ),
+          );
+        } else {
+          // Fallback: copy email details to clipboard
+          setState(() {
+            isSendingEmail = false;
+          });
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              backgroundColor: AppColors.primaryColor,
+              content: Text(
+                'Please send your message to: ${StringConst.DEV_EMAIL}',
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                  fontSize: Sizes.TEXT_SIZE_16,
+                  color: AppColors.white,
+                ),
+              ),
+              duration: Duration(seconds: 5),
+            ),
+          );
+        }
+      } catch (e) {
+        setState(() {
+          isSendingEmail = false;
+        });
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            backgroundColor: AppColors.primaryColor,
+            content: Text(
+              'Please send your message directly to: ${StringConst.DEV_EMAIL}',
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                fontSize: Sizes.TEXT_SIZE_16,
+                color: AppColors.white,
+              ),
+            ),
+            duration: Duration(seconds: 5),
+          ),
+        );
+      }
     } else {
       isNameValid( _nameController.text);
       isEmailValid(_emailController.text);

@@ -15,15 +15,15 @@ class EmailBloc extends Bloc<EmailEvent, EmailState> {
 
   EmailState get initialState => EmailState.initial();
 
-  EmailBloc(this._emailRepository) : super(EmailState.initial());
+  EmailBloc(this._emailRepository) : super(EmailState.initial()) {
+    on<SendEmail>(_onSendEmail);
+  }
 
-  @override
-
-  @override
-  Stream<EmailState> mapEventToState(
-    EmailEvent event,
-  ) async* {
-    yield EmailState.sendingEmail();
+  Future<void> _onSendEmail(
+    SendEmail event,
+    Emitter<EmailState> emit,
+  ) async {
+    emit(EmailState.sendingEmail());
     
     final response = await _emailRepository.sendEmail(
       name: event.name,
@@ -32,13 +32,13 @@ class EmailBloc extends Bloc<EmailEvent, EmailState> {
       message: event.message,
     );
 
-    yield* response.fold(
-      (failure) async* {
-        yield EmailState.failure();
+    response.fold(
+      (failure) {
+        emit(EmailState.failure());
       },
-      (data) async* {
-        yield EmailState.emailSentSuccessFully();
+      (data) {
+        emit(EmailState.emailSentSuccessFully());
       },
     );
-    }
+  }
 }

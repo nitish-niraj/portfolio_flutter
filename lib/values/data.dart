@@ -1,5 +1,15 @@
 part of 'values.dart';
 
+class SkillCategory {
+  final String title;
+  final List<String> skills;
+
+  SkillCategory({
+    required this.title,
+    required this.skills,
+  });
+}
+
 class CertificationData {
   CertificationData({
     required this.title,
@@ -137,67 +147,101 @@ class Data {
     ),
   ];
 
-  // Left Column - Core Expertise
-  static List<String> mobileTechnologies = [
-    "━━━━━ AI & Machine Learning ━━━━━",
-    "Generative AI",
-    "RAG Systems",
-    "Large Language Models (LLMs)",
-    "Prompt Engineering",
-    "AI API Integration",
-    "Computer Vision",
-    "OCR-based Text Recognition",
-    "Geospatial & GPS Validation",
-    "Feature Engineering",
-    "Model Evaluation",
-    "",
-    "━━━━━ Programming Languages ━━━━━",
-    "Python",
-    "Java",
-    "JavaScript / TypeScript",
-    "Dart",
-    "SQL",
-    "C++",
-    "R",
-    "",
-    "━━━━━ Frameworks & Development ━━━━━",
-    "Flutter (Bloc)",
-    "React",
-    "Tailwind CSS",
-    "Node.js (Express)",
-    "Flask",
+  // 7-Column Skill Categories
+  static List<SkillCategory> skillCategories = [
+    SkillCategory(
+      title: "AI & Machine Learning",
+      skills: [
+        "Generative AI",
+        "RAG Systems",
+        "Large Language Models (LLMs)",
+        "Prompt Engineering",
+        "AI API Integration",
+        "Computer Vision",
+        "OCR-based Text Recognition",
+        "Geospatial & GPS Validation",
+        "Feature Engineering",
+        "Model Evaluation",
+      ],
+    ),
+    SkillCategory(
+      title: "Programming Languages",
+      skills: [
+        "Python",
+        "Java",
+        "JavaScript / TypeScript",
+        "Dart",
+        "SQL",
+        "C++",
+        "R",
+      ],
+    ),
+    SkillCategory(
+      title: "Frameworks & Development",
+      skills: [
+        "Flutter (Bloc)",
+        "React",
+        "Tailwind CSS",
+        "Node.js (Express)",
+        "Flask",
+      ],
+    ),
+    SkillCategory(
+      title: "Databases & Storage",
+      skills: [
+        "PostgreSQL (Supabase)",
+        "Vector Databases",
+      ],
+    ),
+    SkillCategory(
+      title: "Cloud & DevOps",
+      skills: [
+        "AWS",
+        "Google Cloud",
+        "Docker",
+        "CI/CD (Basics)",
+      ],
+    ),
+    SkillCategory(
+      title: "Tools & Platforms",
+      skills: [
+        "Git & GitHub",
+        "VS Code",
+        "IntelliJ",
+        "Android Studio",
+        "Postman",
+        "Jupyter Notebook",
+        "Anaconda",
+        "Firebase",
+        "WordPress",
+        "Figma",
+        "LaTeX",
+      ],
+    ),
+    SkillCategory(
+      title: "Professional Skills",
+      skills: [
+        "Problem-Solving",
+        "Collaboration",
+        "Leadership",
+        "Clear Documentation & Communication",
+      ],
+    ),
   ];
 
-  // Right Column - Technical Stack & Tools
+  // Legacy lists for backward compatibility
+  static List<String> mobileTechnologies = [
+    "Generative AI",
+    "RAG Systems",
+    "Python",
+    "Java",
+  ];
+
   static List<String> otherTechnologies = [
-    "━━━━━ Databases & Storage ━━━━━",
-    "PostgreSQL (Supabase)",
-    "Vector Databases",
-    "",
-    "━━━━━ Cloud & DevOps ━━━━━",
+    "Flutter (Bloc)",
+    "React",
     "AWS",
-    "Google Cloud",
     "Docker",
-    "CI/CD (Basics)",
-    "",
-    "━━━━━ Tools & Platforms ━━━━━",
-    "Git & GitHub",
-    "VS Code",
-    "IntelliJ",
-    "Android Studio",
-    "Postman",
-    "Jupyter Notebook",
-    "Anaconda",
-    "Firebase",
-    "WordPress",
-    "Figma",
-    "LaTeX",
-    "",
-    "━━━━━ Professional Skills ━━━━━",
-    "Problem-Solving",
-    "Collaboration",
-    "Leadership",
-    "Clear Documentation & Communication",
   ];
   static List<SocialData> socialData1 = [
     SocialData(
@@ -246,7 +290,8 @@ class Data {
   ];
 
   static List<ProjectItemData> recentWorks = [
-    Projects.DISNEY_PLUS,
+    Projects.PHOTO_GUARD,
+    Projects.GPS_VERIFIER,
     Projects.FLUTTER_CATALOG,
     Projects.DROP,
     Projects.ROAM,
@@ -256,7 +301,8 @@ class Data {
   ];
 
   static List<ProjectItemData> projects = [
-    Projects.DISNEY_PLUS,
+    Projects.PHOTO_GUARD,
+    Projects.GPS_VERIFIER,
     Projects.FLUTTER_CATALOG,
     Projects.DROP,
     Projects.ROAM,
@@ -383,18 +429,6 @@ class Data {
 
   static List<ExperienceData> experienceData = [
     ExperienceData(
-      company: StringConst.COMPANY_5,
-      position: StringConst.POSITION_5,
-      companyUrl: StringConst.COMPANY_5_URL,
-      roles: [
-        StringConst.COMPANY_5_ROLE_1,
-        StringConst.COMPANY_5_ROLE_2,
-        StringConst.COMPANY_5_ROLE_3,
-      ],
-      location: StringConst.LOCATION_5,
-      duration: StringConst.DURATION_5,
-    ),
-    ExperienceData(
       company: StringConst.COMPANY_4,
       position: StringConst.POSITION_4,
       companyUrl: StringConst.COMPANY_4_URL,
@@ -402,6 +436,8 @@ class Data {
         StringConst.COMPANY_4_ROLE_1,
         StringConst.COMPANY_4_ROLE_2,
         StringConst.COMPANY_4_ROLE_3,
+        StringConst.COMPANY_4_ROLE_4,
+        StringConst.COMPANY_4_ROLE_5,
       ],
       location: StringConst.LOCATION_4,
       duration: StringConst.DURATION_4,
@@ -414,6 +450,7 @@ class Data {
         StringConst.COMPANY_3_ROLE_1,
         StringConst.COMPANY_3_ROLE_2,
         StringConst.COMPANY_3_ROLE_3,
+        StringConst.COMPANY_3_ROLE_4,
       ],
       location: StringConst.LOCATION_3,
       duration: StringConst.DURATION_3,
@@ -426,6 +463,7 @@ class Data {
         StringConst.COMPANY_2_ROLE_1,
         StringConst.COMPANY_2_ROLE_2,
         StringConst.COMPANY_2_ROLE_3,
+        StringConst.COMPANY_2_ROLE_4,
       ],
       location: StringConst.LOCATION_2,
       duration: StringConst.DURATION_2,
@@ -434,38 +472,57 @@ class Data {
 }
 
 class Projects {
-  static ProjectItemData DISNEY_PLUS = ProjectItemData(
-    title: StringConst.DISNEY_PLUS,
-    subtitle: StringConst.DISNEY_PLUS,
-    platform: StringConst.DISNEY_PLUS_PLATFORM,
-    primaryColor: AppColors.disneyPlus,
-    image: ImagePath.DISNEY_PLUS_COVER,
-    coverUrl: ImagePath.DISNEY_PLUS_SCREENS,
-    navSelectedTitleColor: AppColors.flutterCatalogSelectedNavTitle,
-    appLogoColor: AppColors.flutterCatalogAppLogo,
+  static ProjectItemData PHOTO_GUARD = ProjectItemData(
+    title: StringConst.PHOTO_GUARD,
+    subtitle: StringConst.PHOTO_GUARD_SUBTITLE,
+    platform: StringConst.PHOTO_GUARD_PLATFORM,
+    primaryColor: AppColors.primaryColor,
+    image: ImagePath.PHOTO_GUARD_COVER,
+    coverUrl: ImagePath.PHOTO_GUARD_SCREENS,
+    navSelectedTitleColor: AppColors.black,
+    appLogoColor: AppColors.black,
     projectAssets: [
-      ImagePath.DISNEY_PLUS_1,
-      ImagePath.DISNEY_PLUS_2,
-      ImagePath.DISNEY_PLUS_3,
-      ImagePath.DISNEY_PLUS_4,
-      ImagePath.DISNEY_PLUS_5,
-      ImagePath.DISNEY_PLUS_6,
-      ImagePath.DISNEY_PLUS_7,
-      ImagePath.DISNEY_PLUS_8,
-      ImagePath.DISNEY_PLUS_9,
-      ImagePath.DISNEY_PLUS_10,
-      ImagePath.DISNEY_PLUS_11,
-      ImagePath.DISNEY_PLUS_12,
-      ImagePath.DISNEY_PLUS_13,
+      ImagePath.PHOTO_GUARD_1,
+      ImagePath.PHOTO_GUARD_2,
+      ImagePath.PHOTO_GUARD_3,
+      ImagePath.PHOTO_GUARD_4,
+      ImagePath.PHOTO_GUARD_5,
     ],
-    category: StringConst.DISNEY_PLUS_CATEGORY,
-    portfolioDescription: StringConst.DISNEY_PLUS_DETAIL,
+    category: StringConst.PHOTO_GUARD_CATEGORY,
+    portfolioDescription: StringConst.PHOTO_GUARD_DETAIL,
     isPublic: true,
     isOnPlayStore: false,
-    technologyUsed: StringConst.JETPACK_COMPOSE,
-    gitHubUrl: StringConst.DISNEY_PLUS_GITHUB_URL,
-    playStoreUrl: StringConst.DISNEY_PLUS_PLAYSTORE_URL,
+    technologyUsed: "Python, OpenCV, Machine Learning",
+    gitHubUrl: StringConst.PHOTO_GUARD_GITHUB_URL,
+    playStoreUrl: StringConst.PHOTO_GUARD_PLAYSTORE_URL,
   );
+
+  static ProjectItemData GPS_VERIFIER = ProjectItemData(
+    title: StringConst.GPS_VERIFIER,
+    subtitle: StringConst.GPS_VERIFIER_SUBTITLE,
+    platform: StringConst.GPS_VERIFIER_PLATFORM,
+    primaryColor: AppColors.primaryColor,
+    image: ImagePath.GPS_VERIFIER_COVER,
+    coverUrl: ImagePath.GPS_VERIFIER_SCREENS,
+    navSelectedTitleColor: AppColors.black,
+    appLogoColor: AppColors.black,
+    projectAssets: [
+      ImagePath.GPS_VERIFIER_1,
+      ImagePath.GPS_VERIFIER_2,
+      ImagePath.GPS_VERIFIER_3,
+      ImagePath.GPS_VERIFIER_4,
+      ImagePath.GPS_VERIFIER_5,
+      ImagePath.GPS_VERIFIER_6,
+    ],
+    category: StringConst.GPS_VERIFIER_CATEGORY,
+    portfolioDescription: StringConst.GPS_VERIFIER_DETAIL,
+    isPublic: true,
+    isOnPlayStore: false,
+    technologyUsed: "Python, OpenCV, Computer Vision, OCR",
+    gitHubUrl: StringConst.GPS_VERIFIER_GITHUB_URL,
+    playStoreUrl: StringConst.GPS_VERIFIER_PLAYSTORE_URL,
+  );
+
   static ProjectItemData FLUTTER_CATALOG = ProjectItemData(
     title: StringConst.FLUTTER_CATALOG,
     subtitle: StringConst.FLUTTER_CATALOG,
