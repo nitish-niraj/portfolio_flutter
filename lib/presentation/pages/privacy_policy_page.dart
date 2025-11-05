@@ -125,7 +125,7 @@ class _PrivacyPolicyPageState extends State<PrivacyPolicyPage>
                   ),
                   SpaceH12(),
                   Text(
-                    '''If you have any questions or concerns regarding our privacy policy, please feel free to contact us at nitishkumar@gmail.com.\nThank you for trusting us with your privacy.''',
+                    '''If you have any questions or concerns regarding our privacy policy, please feel free to contact us at kumarnitish87461@gmail.com.\nThank you for trusting us with your privacy.''',
                     style: theme.textTheme.bodyLarge,
                   ),
                   SpaceH20(),

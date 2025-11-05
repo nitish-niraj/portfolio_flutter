@@ -130,6 +130,11 @@ class Data {
       iconData: FontAwesomeIcons.telegram,
       url: StringConst.TELEGRAM_URL,
     ),
+    SocialData(
+      name: StringConst.FACEBOOK,
+      iconData: FontAwesomeIcons.facebook,
+      url: StringConst.FACEBOOK_URL,
+    ),
   ];
 
   static List<String> mobileTechnologies = [
@@ -206,6 +211,11 @@ class Data {
       name: StringConst.TELEGRAM,
       iconData: FontAwesomeIcons.telegram,
       url: StringConst.TELEGRAM_URL,
+    ),
+    SocialData(
+      name: StringConst.FACEBOOK,
+      iconData: FontAwesomeIcons.facebook,
+      url: StringConst.FACEBOOK_URL,
     ),
   ];
 

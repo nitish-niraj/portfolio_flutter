@@ -15,10 +15,10 @@ class StringConst {
   static const String WORK = "Where I've Worked";
   static const String SERVICES = "Services";
   static const String CONTACT = "Contact";
-  static const String PHONE_NUMBER = "Phone Number";
+  static const String PHONE_NUMBER = "+916206825031";
   static const String RESUME = "Resume";
   static const String CERTIFICATIONS = "Certifications";
-  static const String EMAIL_VALUE = "nitishkumar@gmail.com";
+  static const String EMAIL_VALUE = "kumarnitish87461@gmail.com";
 
   // Home Page
   static const String HI = "Hi,";
@@ -111,7 +111,7 @@ class StringConst {
   static const String VIEW = "View";
   static const String COMING_SOON = "COMING SOON !!";
   static const String BUILT_WITH_FLUTTER = "Built using ";
-  static const String DEV_EMAIL = "nitishkumar@gmail.com";
+  static const String DEV_EMAIL = "kumarnitish87461@gmail.com";
   static const String EMAIL_URL = "mailto:<$DEV_EMAIL>?subject=&body=";
 
   static const String KEY_SKILLS = "KEY SKILLS";
@@ -171,11 +171,12 @@ class StringConst {
 
   static const String GITHUB_URL = "https://github.com/nitish-niraj";
   static const String LINKED_IN_URL =
-      "https://www.linkedin.com/in/nitish-kumar";
-  static const String TWITTER_URL = "https://twitter.com/nitishkumar";
+      "https://www.linkedin.com/in/niru-nny/";
+  static const String TWITTER_URL = "https://x.com/niru_nny";
   static const String INSTAGRAM_URL =
-      "https://www.instagram.com/nitish_kumar";
+      "https://www.instagram.com/niru.nny";
   static const String TELEGRAM_URL = "https://t.me/nitishkumar";
+  static const String FACEBOOK_URL = "https://www.facebook.com/profile.php?id=100011312194742";
 
   //Contacts
   static const String CONNECT = "Connect with me";
@@ -184,6 +185,7 @@ class StringConst {
   static const String TWITTER = "Twitter";
   static const String INSTAGRAM = "Instagram";
   static const String TELEGRAM = "Telegram";
+  static const String FACEBOOK = "Facebook";
   static const String GITHUB = "Github";
 
   //Certificate Urls
