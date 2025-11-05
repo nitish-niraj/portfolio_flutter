@@ -175,7 +175,7 @@ class StringConst {
   static const String TWITTER_URL = "https://x.com/niru_nny";
   static const String INSTAGRAM_URL =
       "https://www.instagram.com/niru.nny";
-  static const String TELEGRAM_URL = "https://t.me/nitishkumar";
+  static const String TELEGRAM_URL = "https://t.me/niru_nny";
   static const String FACEBOOK_URL = "https://www.facebook.com/profile.php?id=100011312194742";
 
   //Contacts
