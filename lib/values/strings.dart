@@ -24,7 +24,7 @@ class StringConst {
   static const String HI = "Hi,";
   static const String DEV_INTRO = "I'm Nitish.";
   static const String DEV_TITLE = "Software Engineer.";
-  static const String DEV_DESC = "Mobile Engineer / Full Stack Developer / Cloud Devops";
+  static const String DEV_DESC = "AI/ML Engineer / Generative AI / Web developer.";
   static const String SEE_MY_WORKS = "See my works";
   static const String SCROLL_DOWN = "Scroll Down";
   static const String CRAFTED_WITH_LOVE = "Crafted with love.";
@@ -47,8 +47,8 @@ class StringConst {
   static const String MESSAGE_ERROR_MSG =
       "* Please enter something to send this form";
   static const String SEND_MESSAGE = "Send Message";
-  static const String COPYRIGHT = "©  2021  Built by  $DEV_NAME,";
-  static const String DESIGNED_BY = "Designed by Julius G.";
+  static const String COPYRIGHT = "©  2025  Built by  $DEV_NAME,";
+  static const String DESIGNED_BY = "Inspired by Julius G.";
   static const String DESIGN_LINK =
       "https://www.behance.net/gallery/63574251/Personal-Portfolio-Website-Design";
   static const String MESSAGE_ME = "Message me";
@@ -57,25 +57,25 @@ class StringConst {
 
   // About Page
   static const String ABOUT_DEV_CATCH_LINE =
-      "I am a passionate front-end developer and ui/ux designer with a keen eye for details.";
+      "I am a specialized AI/ML systems developer with expertise in Generative AI and RAG systems, passionate about engineering intelligent solutions that deliver high-impact, measurable results.";
   static const String ABOUT_DEV_CATCH_LINE_1 = "I specialize in building high ";
   static const String ABOUT_DEV_CATCH_LINE_2 =
-      "quality mobile & web applications.";
+      "quality AI/ML & web applications.";
   // static const String ABOUT_DEV_CATCH_LINE_3 = "& web applications";
   static const String ABOUT_DEV_CATCH_LINE_4 = "I also have a strong";
-  static const String ABOUT_DEV_CATCH_LINE_5 = "passion for opensource work.";
+  static const String ABOUT_DEV_CATCH_LINE_5 = "passion for Generative AI work.";
   static const String ABOUT_DEV_STORY = "Story";
   static const String ABOUT_DEV_STORY_TITLE =
       "A little bit about myself.";
   static const String ABOUT_DEV_STORY_CONTENT_1 =
-      "I am full stack software engineer with great passion for building high quality applications. I have an extensive experience building frontend (mobile & web) and backend applications. I occasionally work as a tech consultant and I am enthusiastic about Devops & Cloud computing technologies.";
+      "I’m a Full-Stack Developer & AI/ML Engineer focused on building simple, user-friendly, and impactful software. I work across web, mobile, and AI systems, with a strong interest in Generative AI and RAG-based applications. I occasionally work as a freelancer and I am enthusiastic about Cloud computing technologies too, to deploy and optimize applications for real-world usage.";
   static const String ABOUT_DEV_STORY_CONTENT_2 =
-      "I have a Masters in IT from Carnegie Mellon University where I majored in Software Engineering. I have strong technical skills as well as excellent interpersonal skills, which has enabled me to work & interact with clients all over the world.";
+      "I am currently pursuing my Master of Computer Applications (MCA) at Lovely Professional University and hold a Bachelor of Vocation in Computer Application from Banaras Hindu University. I am a detail-oriented and collaborative developer, having strong analytical and problem-solving skills as well as interpersonal skills, which has helped me work and interact with developers or clients from all around the world.";
   static const String ABOUT_DEV_STORY_CONTENT_3 =
-      "I am very great at finding solutions to problems and I have a very keen eye for details. I enjoy building fun/useful projects in my free time and open sourcing them. I am an avid reader, lover of all forms art & music, a big fan of poetry & I love travelling.";
+      "Outside of engineering, I enjoy exploring creativity through photography, where I get to enhance my sense of composition, aesthetics, and attention to detail-all qualities that find a way to blend into clean design and far better user experiences. In my spare time, I enjoy building side-projects, contributing to open-source, and continuously learning to stay ahead of innovation.";
   static const String ABOUT_DEV_TECHNOLOGY = "Technology";
-  static const String MOBILE_TECH = "Mobile Technologies";
-  static const String OTHER_TECH = "Web / Cloud / Design Technologies";
+  static const String MOBILE_TECH = "AI/ML & Programming Languages";
+  static const String OTHER_TECH = "Frameworks, Tools & Professional Skills";
   static const String ABOUT_DEV_TECHNOLOGY_TITLE = "What I use.";
   static const String ABOUT_DEV_TECHNOLOGY_CONTENT =
       "I use a number of tools to aid my creative process when bringing things to life. Listed below are the tools and technologies that I have used over the years.";

@@ -1,4 +1,5 @@
-import 'dart:ui';
+
+// ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:nitish_kumar_portfolio/values/values.dart';
