@@ -143,23 +143,27 @@ class ImagePath {
 
   // House Price Prediction
   static const String HOUSE_PRICE_COVER =
-      "$projectsDir/houseprice/01_predicted_vs_actual.png";
+      "$projectsDir/houseprice/08_demo_interface_1.png";
   static const String HOUSE_PRICE_SCREENS =
-      "$projectsDir/houseprice/01_predicted_vs_actual.png";
+      "$projectsDir/houseprice/08_demo_interface_1.png";
 
   static const String HOUSE_PRICE_1 =
-      "$projectsDir/houseprice/01_predicted_vs_actual.png";
+      "$projectsDir/houseprice/08_demo_interface_1.png";
   static const String HOUSE_PRICE_2 =
-      "$projectsDir/houseprice/02_residuals_analysis.png";
+      "$projectsDir/houseprice/09_demo_interface_2.png";
   static const String HOUSE_PRICE_3 =
-      "$projectsDir/houseprice/03_feature_importance.png";
+      "$projectsDir/houseprice/01_predicted_vs_actual.png";
   static const String HOUSE_PRICE_4 =
-      "$projectsDir/houseprice/04_shap_summary.png";
+      "$projectsDir/houseprice/02_residuals_analysis.png";
   static const String HOUSE_PRICE_5 =
-      "$projectsDir/houseprice/05_eda_income_distribution.png";
+      "$projectsDir/houseprice/03_feature_importance.png";
   static const String HOUSE_PRICE_6 =
-      "$projectsDir/houseprice/06_eda_correlation_heatmap.png";
+      "$projectsDir/houseprice/04_shap_summary.png";
   static const String HOUSE_PRICE_7 =
+      "$projectsDir/houseprice/05_eda_income_distribution.png";
+  static const String HOUSE_PRICE_8 =
+      "$projectsDir/houseprice/06_eda_correlation_heatmap.png";
+  static const String HOUSE_PRICE_9 =
       "$projectsDir/houseprice/07_train_vs_test_performance.png";
 
 
