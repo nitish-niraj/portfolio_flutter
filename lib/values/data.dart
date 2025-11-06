@@ -292,6 +292,7 @@ class Data {
   static List<ProjectItemData> recentWorks = [
     Projects.PHOTO_GUARD,
     Projects.GPS_VERIFIER,
+    Projects.HOUSE_PRICE,
     Projects.FLUTTER_CATALOG,
     Projects.DROP,
     Projects.ROAM,
@@ -303,6 +304,7 @@ class Data {
   static List<ProjectItemData> projects = [
     Projects.PHOTO_GUARD,
     Projects.GPS_VERIFIER,
+    Projects.HOUSE_PRICE,
     Projects.FLUTTER_CATALOG,
     Projects.DROP,
     Projects.ROAM,
@@ -521,6 +523,33 @@ class Projects {
     technologyUsed: "Python, OpenCV, Computer Vision, OCR",
     gitHubUrl: StringConst.GPS_VERIFIER_GITHUB_URL,
     playStoreUrl: StringConst.GPS_VERIFIER_PLAYSTORE_URL,
+  );
+
+  static ProjectItemData HOUSE_PRICE = ProjectItemData(
+    title: StringConst.HOUSE_PRICE,
+    subtitle: StringConst.HOUSE_PRICE_SUBTITLE,
+    platform: StringConst.HOUSE_PRICE_PLATFORM,
+    primaryColor: AppColors.primaryColor,
+    image: ImagePath.HOUSE_PRICE_COVER,
+    coverUrl: ImagePath.HOUSE_PRICE_SCREENS,
+    navSelectedTitleColor: AppColors.black,
+    appLogoColor: AppColors.black,
+    projectAssets: [
+      ImagePath.HOUSE_PRICE_1,
+      ImagePath.HOUSE_PRICE_2,
+      ImagePath.HOUSE_PRICE_3,
+      ImagePath.HOUSE_PRICE_4,
+      ImagePath.HOUSE_PRICE_5,
+      ImagePath.HOUSE_PRICE_6,
+      ImagePath.HOUSE_PRICE_7,
+    ],
+    category: StringConst.HOUSE_PRICE_CATEGORY,
+    portfolioDescription: StringConst.HOUSE_PRICE_DETAIL,
+    isPublic: true,
+    isOnPlayStore: false,
+    technologyUsed: "Python, Random Forest, Scikit-learn, Pandas",
+    gitHubUrl: StringConst.HOUSE_PRICE_GITHUB_URL,
+    playStoreUrl: StringConst.HOUSE_PRICE_PLAYSTORE_URL,
   );
 
   static ProjectItemData FLUTTER_CATALOG = ProjectItemData(

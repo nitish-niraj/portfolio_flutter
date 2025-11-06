@@ -141,6 +141,27 @@ class ImagePath {
   static const String GPS_VERIFIER_6 =
       "$projectsDir/gpsverifier/Screenshot 2025-11-06 023024.png";
 
+  // House Price Prediction
+  static const String HOUSE_PRICE_COVER =
+      "$projectsDir/houseprice/01_predicted_vs_actual.png";
+  static const String HOUSE_PRICE_SCREENS =
+      "$projectsDir/houseprice/01_predicted_vs_actual.png";
+
+  static const String HOUSE_PRICE_1 =
+      "$projectsDir/houseprice/01_predicted_vs_actual.png";
+  static const String HOUSE_PRICE_2 =
+      "$projectsDir/houseprice/02_residuals_analysis.png";
+  static const String HOUSE_PRICE_3 =
+      "$projectsDir/houseprice/03_feature_importance.png";
+  static const String HOUSE_PRICE_4 =
+      "$projectsDir/houseprice/04_shap_summary.png";
+  static const String HOUSE_PRICE_5 =
+      "$projectsDir/houseprice/05_eda_income_distribution.png";
+  static const String HOUSE_PRICE_6 =
+      "$projectsDir/houseprice/06_eda_correlation_heatmap.png";
+  static const String HOUSE_PRICE_7 =
+      "$projectsDir/houseprice/07_train_vs_test_performance.png";
+
 
   // Flutter Catalog
   static const String FLUTTER_CATALOG_COVER =

@@ -382,6 +382,17 @@ class StringConst {
   static const String GPS_VERIFIER_GITHUB_URL =
       "https://github.com/nitish-niraj/GPS-verification";
 
+  static const String HOUSE_PRICE = "House Price Prediction";
+  static const String HOUSE_PRICE_PLATFORM = "Python / Machine Learning";
+  static const String HOUSE_PRICE_CATEGORY = "AI/ML Project";
+  static const String HOUSE_PRICE_SUBTITLE =
+      "California House Price Prediction using Random Forest";
+  static const String HOUSE_PRICE_DETAIL =
+      "A machine learning model for predicting California house prices based on various features like location, age, size, and proximity to the ocean. This model uses a Random Forest Regressor trained on the California Housing dataset and achieves strong predictive performance. The project includes comprehensive exploratory data analysis (EDA), feature importance analysis, residuals analysis, and SHAP (SHapley Additive exPlanations) interpretability techniques for understanding model predictions.";
+  static const String HOUSE_PRICE_PLAYSTORE_URL = "";
+  static const String HOUSE_PRICE_GITHUB_URL =
+      "https://github.com/nitish-niraj/house-price-prediction";
+
   static const String FLUTTER_CATALOG = "Flutter Catalog";
   static const String FLUTTER_CATALOG_PLATFORM = "Android / IOS.";
   static const String FLUTTER_CATALOG_CATEGORY = "UI Kit.";
