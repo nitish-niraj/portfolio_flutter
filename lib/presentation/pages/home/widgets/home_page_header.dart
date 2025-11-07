@@ -159,9 +159,11 @@ class _HomePageHeaderState extends State<HomePageHeader>
                               width: screenWidth,
                             ),
                           ),
-                          Image.asset(
-                            ImagePath.DEV_MEDITATE,
-                            width: screenWidth,
+                          Center(
+                            child: Image.asset(
+                              ImagePath.DEV_MEDITATE,
+                              width: screenWidth * 0.65,
+                            ),
                           ),
                         ],
                       ),
@@ -208,9 +210,11 @@ class _HomePageHeaderState extends State<HomePageHeader>
                               width: screenWidth * 0.35,
                             ),
                           ),
-                          Image.asset(
-                            ImagePath.DEV_MEDITATE,
-                            width: screenWidth * 0.35,
+                          Center(
+                            child: Image.asset(
+                              ImagePath.DEV_MEDITATE,
+                              width: screenWidth * 0.24,
+                            ),
                           ),
                         ],
                       ),
