@@ -393,6 +393,17 @@ class StringConst {
   static const String HOUSE_PRICE_GITHUB_URL =
       "https://github.com/nitish-niraj/house-price-prediction";
 
+  static const String URGENCY_CHECKER = "Civic Issue Urgency Classifier";
+  static const String URGENCY_CHECKER_PLATFORM = "Python / FastAPI / ML";
+  static const String URGENCY_CHECKER_CATEGORY = "AI/ML Project";
+  static const String URGENCY_CHECKER_SUBTITLE =
+      "Multimodal civic issue prioritization system with NLP & Computer Vision";
+  static const String URGENCY_CHECKER_DETAIL =
+      "A sophisticated multimodal system that prioritizes citizen-reported civic issues by combining text and image evidence. The system analyzes user descriptions and photos using NLP (TF-IDF + engineered features) and computer vision to produce ranked urgency levels (HIGH / MEDIUM / LOW) with a numeric 1-10 urgency score, confidence metrics, human-readable reasoning, recommended department routing, and estimated response time. The service is exposed via a FastAPI backend with interactive API documentation (/docs) and a modern responsive web UI. Key features include multimodal fusion of text and image analysis, lightweight CPU-friendly models, CORS-enabled API, and Docker-ready packaging. The system includes YOLO integration support for advanced object detection in civic infrastructure imagery. Example use case: A citizen uploads a photo of a cracked road with a description - the system returns HIGH priority with reasoning (e.g., 'large cracks blocking hospital access'), confidence score, and recommended emergency response routing.";
+  static const String URGENCY_CHECKER_PLAYSTORE_URL = "";
+  static const String URGENCY_CHECKER_GITHUB_URL =
+      "https://github.com/nitish-niraj/urgency-checker";
+
   static const String FLUTTER_CATALOG = "Flutter Catalog";
   static const String FLUTTER_CATALOG_PLATFORM = "Android / IOS.";
   static const String FLUTTER_CATALOG_CATEGORY = "UI Kit.";

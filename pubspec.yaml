@@ -76,6 +76,7 @@ flutter:
     - assets/images/projects/photoguard/
     - assets/images/projects/roam/
     - assets/images/projects/outfitr/
+    - assets/images/projects/urgencychecker/
   #    - assets/screenshots/
 
   # An image asset can refer to one or more resolution-specific "variants", see

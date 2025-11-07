@@ -166,6 +166,23 @@ class ImagePath {
   static const String HOUSE_PRICE_9 =
       "$projectsDir/houseprice/07_train_vs_test_performance.png";
 
+  // Civic Issue Urgency Classifier
+  static const String URGENCY_CHECKER_COVER =
+      "$projectsDir/urgencychecker/01_homepage.png";
+  static const String URGENCY_CHECKER_SCREENS =
+      "$projectsDir/urgencychecker/01_homepage.png";
+
+  static const String URGENCY_CHECKER_1 =
+      "$projectsDir/urgencychecker/01_homepage.png";
+  static const String URGENCY_CHECKER_2 =
+      "$projectsDir/urgencychecker/02_form_interface.png";
+  static const String URGENCY_CHECKER_3 =
+      "$projectsDir/urgencychecker/03_results_high.png";
+  static const String URGENCY_CHECKER_4 =
+      "$projectsDir/urgencychecker/04_results_medium.png";
+  static const String URGENCY_CHECKER_5 =
+      "$projectsDir/urgencychecker/05_documentation.png";
+
 
   // Flutter Catalog
   static const String FLUTTER_CATALOG_COVER =

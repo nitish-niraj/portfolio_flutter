@@ -293,6 +293,7 @@ class Data {
     Projects.PHOTO_GUARD,
     Projects.GPS_VERIFIER,
     Projects.HOUSE_PRICE,
+    Projects.URGENCY_CHECKER,
     Projects.DROP,
     Projects.ROAM,
     Projects.LOGIN_CATALOG,
@@ -304,6 +305,7 @@ class Data {
     Projects.PHOTO_GUARD,
     Projects.GPS_VERIFIER,
     Projects.HOUSE_PRICE,
+    Projects.URGENCY_CHECKER,
     Projects.DROP,
     Projects.ROAM,
     Projects.LOGIN_CATALOG,
@@ -550,6 +552,31 @@ class Projects {
     technologyUsed: "Python, Random Forest, Scikit-learn, Pandas",
     gitHubUrl: StringConst.HOUSE_PRICE_GITHUB_URL,
     playStoreUrl: StringConst.HOUSE_PRICE_PLAYSTORE_URL,
+  );
+
+  static ProjectItemData URGENCY_CHECKER = ProjectItemData(
+    title: StringConst.URGENCY_CHECKER,
+    subtitle: StringConst.URGENCY_CHECKER_SUBTITLE,
+    platform: StringConst.URGENCY_CHECKER_PLATFORM,
+    primaryColor: AppColors.primaryColor,
+    image: ImagePath.URGENCY_CHECKER_COVER,
+    coverUrl: ImagePath.URGENCY_CHECKER_SCREENS,
+    navSelectedTitleColor: AppColors.black,
+    appLogoColor: AppColors.black,
+    projectAssets: [
+      ImagePath.URGENCY_CHECKER_1,
+      ImagePath.URGENCY_CHECKER_2,
+      ImagePath.URGENCY_CHECKER_3,
+      ImagePath.URGENCY_CHECKER_4,
+      ImagePath.URGENCY_CHECKER_5,
+    ],
+    category: StringConst.URGENCY_CHECKER_CATEGORY,
+    portfolioDescription: StringConst.URGENCY_CHECKER_DETAIL,
+    isPublic: true,
+    isOnPlayStore: false,
+    technologyUsed: "Python, FastAPI, TF-IDF, NLP, YOLO, Computer Vision",
+    gitHubUrl: StringConst.URGENCY_CHECKER_GITHUB_URL,
+    playStoreUrl: StringConst.URGENCY_CHECKER_PLAYSTORE_URL,
   );
 
   static ProjectItemData FLUTTER_CATALOG = ProjectItemData(
