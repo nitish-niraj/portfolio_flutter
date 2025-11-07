@@ -145,6 +145,11 @@ class Data {
       iconData: FontAwesomeIcons.facebook,
       url: StringConst.FACEBOOK_URL,
     ),
+    SocialData(
+      name: StringConst.HUGGINGFACE,
+      iconData: FontAwesomeIcons.squarespace,
+      url: StringConst.HUGGINGFACE_URL,
+    ),
   ];
 
   // 7-Column Skill Categories
@@ -259,6 +264,11 @@ class Data {
       iconData: FontAwesomeIcons.twitter,
       url: StringConst.TWITTER_URL,
     ),
+    SocialData(
+      name: StringConst.HUGGINGFACE,
+      iconData: FontAwesomeIcons.squarespace,
+      url: StringConst.HUGGINGFACE_URL,
+    ),
   ];
 
   static List<SocialData> socialData2 = [
@@ -286,6 +296,11 @@ class Data {
       name: StringConst.FACEBOOK,
       iconData: FontAwesomeIcons.facebook,
       url: StringConst.FACEBOOK_URL,
+    ),
+    SocialData(
+      name: StringConst.HUGGINGFACE,
+      iconData: FontAwesomeIcons.squarespace,
+      url: StringConst.HUGGINGFACE_URL,
     ),
   ];
 
@@ -595,4 +610,3 @@ class Projects {
     playStoreUrl: StringConst.RESULT_KHOJ_PLAYSTORE_URL,
   );
 }
-
