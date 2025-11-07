@@ -40,12 +40,16 @@ class ImagePath {
   static const String GOOGLE_PLAY = "$imageDir/google_play.png";
 
   // Certifications
-  static const String ANDROID_BASICS_CERT = "$imageDir/android_basics_cert.png";
-  static const String CLOUD_DEVELOPER_CERT = "$imageDir/cloud_developer_cert.png";
-  static const String CMU_MASTERS_CERT = "$imageDir/cmu_cert.png";
-  static const String ASSOCIATE_ANDROID_DEV =
-      "$imageDir/associate_android_dev.png";
-  static const String DATA_SCIENCE_CERT = "$imageDir/data_science_cert.png";
+  static const String CERT_DIR = "$imageDir/certificate";
+  
+  static const String CERT_1 = "$CERT_DIR/1674911052387.jpeg";
+  static const String CERT_2 = "$CERT_DIR/1677027712915.jpeg";
+  static const String CERT_3 = "$CERT_DIR/1682671051117.jpeg";
+  static const String CERT_4 = "$CERT_DIR/1712307782936.jpeg";
+  static const String CERT_5 = "$CERT_DIR/screenshot-1762518354407.png";
+  static const String CERT_6 = "$CERT_DIR/Screenshot_7-11-2025_181244_.jpeg";
+  static const String CERT_7 = "$CERT_DIR/Screenshot_7-11-2025_21317_.jpeg";
+  static const String CERT_8 = "$CERT_DIR/unnamed.png";
 
   // Projects
 

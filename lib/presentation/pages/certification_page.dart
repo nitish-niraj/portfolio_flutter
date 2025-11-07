@@ -101,20 +101,61 @@ class _CertificationPageState extends State<CertificationPage>
               padding: padding,
               child: ContentArea(
                 width: contentAreaWidth,
-                child: AnimatedBuilder(
-                  animation: _certificationsController,
-                  builder: (context, child) {
-                    return Wrap(
-                      direction: Axis.horizontal,
-                      spacing: assignWidth(context, 0.05),
-                      runSpacing: assignHeight(context, 0.02),
-                      children: _certificateList(
-                        data: Data.certificationData,
-                        width: contentAreaWidth,
-                        spacing: spacing,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    AnimatedBuilder(
+                      animation: _certificationsController,
+                      builder: (context, child) {
+                        return Wrap(
+                          direction: Axis.horizontal,
+                          spacing: assignWidth(context, 0.05),
+                          runSpacing: assignHeight(context, 0.02),
+                          children: _certificateList(
+                            data: Data.certificationData,
+                            width: contentAreaWidth,
+                            spacing: spacing,
+                          ),
+                        );
+                      },
+                    ),
+                    SizedBox(height: assignHeight(context, 0.05)),
+                    Container(
+                      padding: EdgeInsets.all(16),
+                      decoration: BoxDecoration(
+                        color: AppColors.grey100.withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(
+                          color: AppColors.primaryColor.withOpacity(0.3),
+                          width: 1,
+                        ),
                       ),
-                    );
-                  },
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.info_outline,
+                            color: AppColors.primaryColor,
+                            size: 20,
+                          ),
+                          SizedBox(width: 12),
+                          Expanded(
+                            child: Text(
+                              StringConst.CERT_NOTE,
+                              style: TextStyle(
+                                color: AppColors.grey600,
+                                fontSize: responsiveSize(
+                                  context,
+                                  Sizes.TEXT_SIZE_14,
+                                  Sizes.TEXT_SIZE_16,
+                                ),
+                                fontStyle: FontStyle.italic,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),

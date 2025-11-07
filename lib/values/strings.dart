@@ -189,29 +189,47 @@ class StringConst {
   static const String GITHUB = "Github";
 
   //Certificate Urls
-  static const String CMU_CERT_URL = "https://www.cmu.edu/hub/registrar/graduation/diplomas/electronic/validation/index.html";
-  static const String ASSOCIATE_ANDROID_DEV_URL =
-      "https://www.credential.net/b296da88-d6be-4bb5-9756-b13efea3a421";
-  static const String DATA_SCIENCE_CERT_URL =
-      "https://graduation.udacity.com/confirm/7CGEJAFR";
-  static const String CLOUD_DEVELOPER_URL =
-      "https://confirm.udacity.com/PJU23DCP";
-  static const String ANDROID_BASICS_CERT_URL =
-      "https://graduation.udacity.com/confirm/9VTDRN5K";
-
-
+  static const String CERT_1_URL = "#"; // Add actual certificate URL when available
+  static const String CERT_2_URL = "#";
+  static const String CERT_3_URL = "#";
+  static const String CERT_4_URL = "#";
+  static const String CERT_5_URL = "#";
+  static const String CERT_6_URL = "#";
+  static const String CERT_7_URL = "#";
+  static const String CERT_8_URL = "#";
 
   //AwardedBy
+  static const String VARIOUS_INSTITUTIONS = "Various Institutions";
   static const String GOOGLE = "Google";
   static const String UDACITY = "Udacity";
   static const String CMU = "Carnegie Mellon University";
 
   //CertificationType
-  static const String MSC_IT = "Msc In Information Technology";
-  static const String ASSOCIATE_ANDROID_DEV = "Associate Android Developer";
-  static const String CLOUD_DEVELOPER = "Cloud Developer";
-  static const String DATA_SCIENCE = "Data Science";
-  static const String ANDROID_BASICS = "Android Basics";
+  static const String CERT_1_TITLE = "Professional Certificate 1";
+  static const String CERT_1_DESC = "Certification in professional development and technical skills";
+  
+  static const String CERT_2_TITLE = "Professional Certificate 2";
+  static const String CERT_2_DESC = "Advanced certification in specialized domain";
+  
+  static const String CERT_3_TITLE = "Professional Certificate 3";
+  static const String CERT_3_DESC = "Industry-recognized certification for technical excellence";
+  
+  static const String CERT_4_TITLE = "Professional Certificate 4";
+  static const String CERT_4_DESC = "Specialized training and certification program";
+  
+  static const String CERT_5_TITLE = "Professional Certificate 5";
+  static const String CERT_5_DESC = "Professional development and skill enhancement";
+  
+  static const String CERT_6_TITLE = "Professional Certificate 6";
+  static const String CERT_6_DESC = "Technical certification and training completion";
+  
+  static const String CERT_7_TITLE = "Professional Certificate 7";
+  static const String CERT_7_DESC = "Advanced professional certification program";
+  
+  static const String CERT_8_TITLE = "Professional Certificate 8";
+  static const String CERT_8_DESC = "Comprehensive technical certification";
+
+  static const String CERT_NOTE = "Note: Some certifications are currently being updated and will be added soon.";
 
   //Experience
   static const String CURRENT_MONTH_YEAR = "May 2020 - Current";
