@@ -5,7 +5,7 @@ class DocumentPath {
   static const String docDir = "assets/assets/images";
   // static const String docDir = "assets/documents";
 
-  //Docs
-  static const String CV = "$docDir/nitish-kumar-cv.pdf";
-  static const String CV_2 = "$docDir/NITISH_KUMAR_CV.pdf";
+  //Docs - Google Drive Resume URL (opens in new tab)
+  static const String CV = "https://drive.google.com/file/d/1ZbmzwMI74Samk0F3xN2A4ZTCCvmbdHDm/view";
+  static const String CV_2 = "https://drive.google.com/file/d/1ZbmzwMI74Samk0F3xN2A4ZTCCvmbdHDm/view";
 }
