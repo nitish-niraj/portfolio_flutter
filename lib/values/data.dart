@@ -580,31 +580,5 @@ class Projects {
     gitHubUrl: StringConst.RESULT_KHOJ_GITHUB_URL,
     playStoreUrl: StringConst.RESULT_KHOJ_PLAYSTORE_URL,
   );
-
-  static ProjectItemData FLUTTER_CATALOG = ProjectItemData(
-    title: StringConst.FLUTTER_CATALOG,
-    subtitle: StringConst.FLUTTER_CATALOG,
-    platform: StringConst.FLUTTER_CATALOG_PLATFORM,
-    primaryColor: AppColors.flutter_catalog,
-    image: ImagePath.FLUTTER_CATALOG_COVER,
-    coverUrl: ImagePath.FLUTTER_CATALOG_COVER,
-    navSelectedTitleColor: AppColors.flutterCatalogSelectedNavTitle,
-    appLogoColor: AppColors.flutterCatalogAppLogo,
-    projectAssets: [
-      ImagePath.FLUTTER_CATALOG_SCREENS,
-      ImagePath.FLUTTER_CATALOG_1,
-      ImagePath.FLUTTER_CATALOG_2,
-      ImagePath.FLUTTER_CATALOG_3,
-      ImagePath.FLUTTER_CATALOG_4,
-      ImagePath.FLUTTER_CATALOG_5,
-    ],
-    category: StringConst.FLUTTER_CATALOG_CATEGORY,
-    portfolioDescription: StringConst.FLUTTER_CATALOG_DETAIL,
-    isPublic: true,
-    isOnPlayStore: true,
-    technologyUsed: StringConst.FLUTTER,
-    gitHubUrl: StringConst.FLUTTER_CATALOG_GITHUB_URL,
-    playStoreUrl: StringConst.FLUTTER_CATALOG_PLAYSTORE_URL,
-  );
 }
 
