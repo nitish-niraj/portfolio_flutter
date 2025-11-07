@@ -3,8 +3,6 @@ import 'package:nitish_kumar_portfolio/presentation/widgets/spaces.dart';
 import 'package:nitish_kumar_portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 
-import 'aerium_button.dart';
-
 class CertificationCard extends StatefulWidget {
   CertificationCard({
     required this.imageUrl,
@@ -128,23 +126,7 @@ class _CertificationCardState extends State<CertificationCard>
                     width: widget.width,
                     height: widget.height,
                     color: widget.hoverColor.withOpacity(0.15),
-                    child: Column(
-                      children: [
-                        Spacer(flex: 3),
-                        AeriumButton(
-                          height: Sizes.HEIGHT_36,
-                          hasIcon: false,
-                          width: 80,
-                          buttonColor: AppColors.white,
-                          borderColor: AppColors.black,
-                          onHoverColor: AppColors.black,
-                          title: widget.actionTitle.toUpperCase(),
-                          onPressed: widget.onTap,
-                        ),
-                         Spacer(),
-                        // SpaceH20(),
-                      ],
-                    ),
+                    child: _buildCardInfo(),
                   )
                   : Empty(),
             ],
@@ -162,7 +144,7 @@ class _CertificationCardState extends State<CertificationCard>
     if (_hovering == true) {
       _playPortfolioCoverAnimation();
     } else if (_hovering == false) {
-      _portfolioCoverController.reverse().orCancel;
+      _portfolioCoverController.reverse();
     }
   }
 
@@ -189,18 +171,6 @@ class _CertificationCardState extends State<CertificationCard>
                 fontSize: Sizes.TEXT_SIZE_16,
               ),
         ),
-        SpaceH16(),
-        AeriumButton(
-          height: Sizes.HEIGHT_36,
-          hasIcon: false,
-          width: 80,
-          buttonColor: AppColors.white,
-          borderColor: AppColors.black,
-          onHoverColor: AppColors.black,
-          title: widget.actionTitle.toUpperCase(),
-          onPressed: widget.onTap,
-        ),
-        SpaceH4(),
         Spacer(flex: 1),
       ],
     );
