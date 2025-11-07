@@ -404,6 +404,17 @@ class StringConst {
   static const String URGENCY_CHECKER_GITHUB_URL =
       "https://github.com/nitish-niraj/urgency-checker";
 
+  static const String RESULT_KHOJ = "ResultKhoj.in";
+  static const String RESULT_KHOJ_PLATFORM = "Web / React / Node.js";
+  static const String RESULT_KHOJ_CATEGORY = "Full Stack Project";
+  static const String RESULT_KHOJ_SUBTITLE =
+      "Instant government exam results with automated email notifications";
+  static const String RESULT_KHOJ_DETAIL =
+      "ResultKhoj.in is a comprehensive platform that transforms how students access government exam results. Instead of manually searching through lengthy PDF files or waiting for official announcements, students can instantly find their results by simply entering their roll number. The platform features an intelligent email notification system that automatically alerts subscribers whenever new exam results are published.\n\nKey Features:\n• Instant Search: Enter your roll number and get results in under 2 seconds\n• Email Notifications: Subscribe once and receive automatic alerts for ALL new exam results\n• Mobile Friendly: Access from any device - phone, tablet, or computer\n• Zero Hassle: No registration required for searching results\n• Privacy First: Your searches are never stored or tracked\n\nFor Content Managers:\n• Bulk Upload: Handle 300,000+ student records with real-time progress tracking\n• AI-Powered Email Drafts: Automatic generation of professional announcement emails\n• Admin Approval Workflow: Review and approve AI-generated emails before sending\n• Automated Email System: Scheduled job detection and email queue management\n\nTech Stack:\n• Frontend: React 18 + Vite + TailwindCSS + Framer Motion\n• Backend: Node.js + Express + Supabase\n• Database: PostgreSQL (Supabase) with JSONB storage\n• Email System: Nodemailer + Gmail SMTP with batch processing\n• Security: JWT Auth, Row Level Security (RLS), Cloudflare Turnstile CAPTCHA\n• Deployment: Netlify (Frontend) + Supabase (Backend)";
+  static const String RESULT_KHOJ_PLAYSTORE_URL = "";
+  static const String RESULT_KHOJ_GITHUB_URL =
+      "https://github.com/nitish-niraj/resultkhoj";
+
   static const String FLUTTER_CATALOG = "Flutter Catalog";
   static const String FLUTTER_CATALOG_PLATFORM = "Android / IOS.";
   static const String FLUTTER_CATALOG_CATEGORY = "UI Kit.";

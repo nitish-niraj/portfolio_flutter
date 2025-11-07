@@ -183,6 +183,22 @@ class ImagePath {
   static const String URGENCY_CHECKER_5 =
       "$projectsDir/urgencychecker/05_documentation.png";
 
+  // ResultKhoj
+  static const String RESULT_KHOJ_COVER =
+      "$projectsDir/resultkhoj/01_homepage.png";
+  static const String RESULT_KHOJ_SCREENS =
+      "$projectsDir/resultkhoj/01_homepage.png";
+
+  static const String RESULT_KHOJ_1 =
+      "$projectsDir/resultkhoj/01_homepage.png";
+  static const String RESULT_KHOJ_2 =
+      "$projectsDir/resultkhoj/02_search_interface.png";
+  static const String RESULT_KHOJ_3 =
+      "$projectsDir/resultkhoj/03_search_results.png";
+  static const String RESULT_KHOJ_4 =
+      "$projectsDir/resultkhoj/04_admin_dashboard.png";
+  static const String RESULT_KHOJ_5 =
+      "$projectsDir/resultkhoj/05_email_notification.png";
 
   // Flutter Catalog
   static const String FLUTTER_CATALOG_COVER =

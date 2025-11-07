@@ -294,6 +294,7 @@ class Data {
     Projects.GPS_VERIFIER,
     Projects.HOUSE_PRICE,
     Projects.URGENCY_CHECKER,
+    Projects.RESULT_KHOJ,
     Projects.DROP,
     Projects.ROAM,
     Projects.LOGIN_CATALOG,
@@ -306,6 +307,7 @@ class Data {
     Projects.GPS_VERIFIER,
     Projects.HOUSE_PRICE,
     Projects.URGENCY_CHECKER,
+    Projects.RESULT_KHOJ,
     Projects.DROP,
     Projects.ROAM,
     Projects.LOGIN_CATALOG,
@@ -577,6 +579,31 @@ class Projects {
     technologyUsed: "Python, FastAPI, TF-IDF, NLP, YOLO, Computer Vision",
     gitHubUrl: StringConst.URGENCY_CHECKER_GITHUB_URL,
     playStoreUrl: StringConst.URGENCY_CHECKER_PLAYSTORE_URL,
+  );
+
+  static ProjectItemData RESULT_KHOJ = ProjectItemData(
+    title: StringConst.RESULT_KHOJ,
+    subtitle: StringConst.RESULT_KHOJ_SUBTITLE,
+    platform: StringConst.RESULT_KHOJ_PLATFORM,
+    primaryColor: AppColors.primaryColor,
+    image: ImagePath.RESULT_KHOJ_COVER,
+    coverUrl: ImagePath.RESULT_KHOJ_SCREENS,
+    navSelectedTitleColor: AppColors.black,
+    appLogoColor: AppColors.black,
+    projectAssets: [
+      ImagePath.RESULT_KHOJ_1,
+      ImagePath.RESULT_KHOJ_2,
+      ImagePath.RESULT_KHOJ_3,
+      ImagePath.RESULT_KHOJ_4,
+      ImagePath.RESULT_KHOJ_5,
+    ],
+    category: StringConst.RESULT_KHOJ_CATEGORY,
+    portfolioDescription: StringConst.RESULT_KHOJ_DETAIL,
+    isPublic: true,
+    isOnPlayStore: false,
+    technologyUsed: "React, Node.js, Express, Supabase, PostgreSQL, Nodemailer",
+    gitHubUrl: StringConst.RESULT_KHOJ_GITHUB_URL,
+    playStoreUrl: StringConst.RESULT_KHOJ_PLAYSTORE_URL,
   );
 
   static ProjectItemData FLUTTER_CATALOG = ProjectItemData(
