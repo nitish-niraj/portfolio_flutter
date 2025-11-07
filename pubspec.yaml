@@ -63,21 +63,11 @@ flutter:
   assets:
     - assets/images/
     - assets/images/projects/
-    - assets/images/projects/aerium-v1/
-    - assets/images/projects/aerium-v2/
-    - assets/images/projects/disneyplus/
-    - assets/images/projects/drop/
-    - assets/images/projects/foodybite/
+    - assets/images/projects/photoguard/
     - assets/images/projects/gpsverifier/
     - assets/images/projects/houseprice/
-    - assets/images/projects/login_catalog/
-    - assets/images/projects/nimbus/
-    - assets/images/projects/otp_package/
-    - assets/images/projects/photoguard/
-    - assets/images/projects/resultkhoj/
-    - assets/images/projects/roam/
-    - assets/images/projects/outfitr/
     - assets/images/projects/urgencychecker/
+    - assets/images/projects/resultkhoj/
   #    - assets/screenshots/
 
   # An image asset can refer to one or more resolution-specific "variants", see
