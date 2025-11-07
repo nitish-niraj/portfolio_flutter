@@ -18,7 +18,7 @@ class AeriumButton extends StatefulWidget {
     this.buttonColor = AppColors.black,
     this.borderColor = AppColors.black,
     this.onHoverColor = AppColors.white,
-    this.iconData = FontAwesomeIcons.telegramPlane,
+    this.iconData = FontAwesomeIcons.telegram,
     this.iconSize = Sizes.ICON_SIZE_14,
     this.duration = const Duration(milliseconds: 200),
     this.curve = Curves.fastOutSlowIn,

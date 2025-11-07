@@ -149,6 +149,7 @@ class Data {
       name: StringConst.HUGGINGFACE,
       iconData: FontAwesomeIcons.squarespace,
       url: StringConst.HUGGINGFACE_URL,
+      svgPath: 'assets/icons/huggingface_logo.svg',
     ),
   ];
 
@@ -268,6 +269,7 @@ class Data {
       name: StringConst.HUGGINGFACE,
       iconData: FontAwesomeIcons.squarespace,
       url: StringConst.HUGGINGFACE_URL,
+      svgPath: 'assets/icons/huggingface_logo.svg',
     ),
   ];
 
@@ -301,6 +303,7 @@ class Data {
       name: StringConst.HUGGINGFACE,
       iconData: FontAwesomeIcons.squarespace,
       url: StringConst.HUGGINGFACE_URL,
+      svgPath: 'assets/icons/huggingface_logo.svg',
     ),
   ];
 

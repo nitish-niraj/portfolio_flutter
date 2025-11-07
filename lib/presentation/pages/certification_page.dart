@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:nitish_kumar_portfolio/core/layout/adaptive.dart';
 import 'package:nitish_kumar_portfolio/presentation/pages/widgets/page_header.dart';
 import 'package:nitish_kumar_portfolio/presentation/pages/widgets/simple_footer.dart';

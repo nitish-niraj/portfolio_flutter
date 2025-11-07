@@ -2,18 +2,21 @@ import 'package:nitish_kumar_portfolio/core/utils/functions.dart';
 import 'package:nitish_kumar_portfolio/presentation/widgets/spaces.dart';
 import 'package:nitish_kumar_portfolio/values/values.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class SocialData {
-  final IconData iconData;
+  final IconData? iconData;
   final String url;
   final String name;
   final Color? color;
+  final String? svgPath;
 
   SocialData({
     required this.name,
-    required this.iconData,
+    this.iconData,
     required this.url,
     this.color = AppColors.white,
+    this.svgPath,
   });
 }
 
@@ -56,11 +59,21 @@ class Socials extends StatelessWidget {
       items.add(
         InkWell(
           onTap: () => Functions.launchUrl(socialData[index].url),
-          child: Icon(
-            socialData[index].iconData,
-            color: socialData[index].color ?? color,
-            size: size,
-          ),
+          child: socialData[index].svgPath != null
+              ? SvgPicture.asset(
+                  socialData[index].svgPath!,
+                  width: size,
+                  height: size,
+                  colorFilter: ColorFilter.mode(
+                    socialData[index].color ?? color,
+                    BlendMode.srcIn,
+                  ),
+                )
+              : Icon(
+                  socialData[index].iconData,
+                  color: socialData[index].color ?? color,
+                  size: size,
+                ),
         ),
       );
 

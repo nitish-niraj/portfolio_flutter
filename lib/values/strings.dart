@@ -177,6 +177,7 @@ class StringConst {
       "https://www.instagram.com/niru.nny";
   static const String TELEGRAM_URL = "https://t.me/niru_nny";
   static const String FACEBOOK_URL = "https://www.facebook.com/profile.php?id=100011312194742";
+  static const String HUGGINGFACE_URL = "https://huggingface.co/niru-nny";
 
   //Contacts
   static const String CONNECT = "Connect with me";
@@ -187,6 +188,7 @@ class StringConst {
   static const String TELEGRAM = "Telegram";
   static const String FACEBOOK = "Facebook";
   static const String GITHUB = "Github";
+  static const String HUGGINGFACE = "HuggingFace";
 
   // Certificate Urls
   static const String CERT_1_URL = "#";
@@ -243,7 +245,7 @@ class StringConst {
   static const String COMPANY_2_ROLE_4 =
       "Conducted usability testing and implemented feedback, increasing task completion rates by approx 25%.";
   static const String LOCATION_2 = "Remote";
-  static const String DURATION_2 = "November 2023 - January 2024";
+  static const String DURATION_2 = "Nov 2023 - Jan 2024";
 
   static const String COMPANY_3 = "Career Guidance, Training & Placement Cell (CGTPC), Banaras Hindu University";
   static const String COMPANY_3_URL = "https://www.bhu.ac.in/";
