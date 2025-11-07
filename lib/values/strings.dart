@@ -531,6 +531,54 @@ class StringConst {
       "https://github.com/nitish-niraj/onboarding-app";
   static const String ONBOARDING_APP_PLAYSTORE_URL = "";
 
+  static const String LOCATION_LOCALITIES_FINDER = "Location Localities Finder";
+  static const String LOCATION_LOCALITIES_FINDER_SUBTITLE =
+      "A utility tool to find and manage location localities data";
+  static const String LOCATION_LOCALITIES_FINDER_DETAIL =
+      "Location Localities Finder is a practical utility tool designed to help developers and location services professionals efficiently find and manage locality data. The project provides APIs and utilities to work with geographical location data.";
+  static const String LOCATION_LOCALITIES_FINDER_GITHUB_URL =
+      "https://github.com/nitish-niraj/location_localities_finder";
+
+  static const String CHUNKING = "Text Chunking Utility";
+  static const String CHUNKING_SUBTITLE =
+      "Intelligent text chunking for NLP and document processing";
+  static const String CHUNKING_DETAIL =
+      "Text Chunking Utility is a powerful tool for splitting large documents and text into meaningful chunks. Essential for NLP pipelines, document processing, and preparing data for machine learning models and embeddings.";
+  static const String CHUNKING_GITHUB_URL =
+      "https://github.com/nitish-niraj/chunking.git";
+
+  static const String SIXTEEN_PERSONALITIES = "16 Personalities Quiz";
+  static const String SIXTEEN_PERSONALITIES_SUBTITLE =
+      "Interactive personality assessment based on the Big Five model";
+  static const String SIXTEEN_PERSONALITIES_DETAIL =
+      "An interactive personality quiz application based on the Big Five personality traits model. Provides detailed personality analysis and insights based on user responses.";
+  static const String SIXTEEN_PERSONALITIES_GITHUB_URL =
+      "https://github.com/nitish-niraj/16presonalities";
+
+  static const String BIG_FIVE = "Big Five Personality Traits";
+  static const String BIG_FIVE_SUBTITLE =
+      "Comprehensive personality assessment system using Big Five model";
+  static const String BIG_FIVE_DETAIL =
+      "A comprehensive personality assessment system built on the Big Five personality traits framework. Deployed on AWS for scalable assessments. Provides psychological personality insights and evaluation.";
+  static const String BIG_FIVE_GITHUB_URL =
+      "https://github.com/nitish-niraj/bigfive";
+
+  static const String GEMINI_GENIOUS = "Gemini Genius";
+  static const String GEMINI_GENIOUS_SUBTITLE =
+      "AI-powered assistant leveraging Google's Gemini AI";
+  static const String GEMINI_GENIOUS_DETAIL =
+      "Gemini Genius is an intelligent AI-powered assistant built with Google's Gemini AI models. Provides advanced AI capabilities for various applications and use cases with a modern, intuitive interface.";
+  static const String GEMINI_GENIOUS_GITHUB_URL =
+      "https://github.com/nitish-niraj/gemini-genious";
+
+  static const String TECH_BLITZ = "TechBlitZ";
+  static const String TECH_BLITZ_SUBTITLE =
+      "High-speed tech learning and knowledge platform";
+  static const String TECH_BLITZ_DETAIL =
+      "TechBlitZ is a dynamic platform designed for rapid tech learning and skill development. Provides curated content and interactive features for developers and tech enthusiasts to stay updated with latest technologies.";
+  static const String TECH_BLITZ_GITHUB_URL =
+      "https://github.com/nitish-niraj/TechBlitZ";
+
   // Font Family
   static const String VISUELT_PRO = "VisueltPro";
 
