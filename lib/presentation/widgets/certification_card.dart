@@ -92,15 +92,13 @@ class _CertificationCardState extends State<CertificationCard>
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: widget.onTap,
-      child: Container(
-        width: widget.width,
-        height: widget.height,
-        child: MouseRegion(
-          onEnter: (e) => _mouseEnter(true),
-          onExit: (e) => _mouseEnter(false),
-          child: Stack(
+    return Container(
+      width: widget.width,
+      height: widget.height,
+      child: MouseRegion(
+        onEnter: (e) => _mouseEnter(true),
+        onExit: (e) => _mouseEnter(false),
+        child: Stack(
             children: [
               Image.asset(
                 widget.imageUrl,
@@ -132,7 +130,6 @@ class _CertificationCardState extends State<CertificationCard>
             ],
           ),
         ),
-      ),
     );
   }
 

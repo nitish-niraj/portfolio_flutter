@@ -1,5 +1,4 @@
 import 'package:nitish_kumar_portfolio/core/layout/adaptive.dart';
-import 'package:nitish_kumar_portfolio/core/utils/functions.dart';
 import 'package:nitish_kumar_portfolio/presentation/pages/widgets/page_header.dart';
 import 'package:nitish_kumar_portfolio/presentation/pages/widgets/simple_footer.dart';
 import 'package:nitish_kumar_portfolio/presentation/widgets/certification_card.dart';
@@ -200,7 +199,6 @@ class _CertificationPageState extends State<CertificationPage>
           ),
           child: CertificationCard(
             imageUrl: data[i].image,
-            onTap: () => _viewCertificate(data[i].url),
             title: data[i].title,
             subtitle: data[i].awardedBy,
             actionTitle: StringConst.VIEW,
@@ -219,9 +217,5 @@ class _CertificationPageState extends State<CertificationPage>
       );
     }
     return widgets;
-  }
-
-  void _viewCertificate(String url) {
-    Functions.launchUrl(url);
   }
 }
