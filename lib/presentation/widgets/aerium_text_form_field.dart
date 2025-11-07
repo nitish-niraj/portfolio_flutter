@@ -48,7 +48,7 @@ class AeriumTextFormField extends StatelessWidget {
   final Color fillColor;
   final bool filled;
   final bool hasTitle;
-  int? maxLines;
+  final int? maxLines;
   final TextEditingController? controller;
 
   @override

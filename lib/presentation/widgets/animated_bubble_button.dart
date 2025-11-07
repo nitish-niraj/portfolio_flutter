@@ -42,9 +42,9 @@ class AnimatedBubbleButton extends StatefulWidget {
   final Offset targetOffset;
   final GestureTapCallback? onTap;
   final BorderRadiusGeometry? endBorderRadius;
-  bool? hovering;
+  final bool? hovering;
   // prevents button from animating on mouse enter and exit
-  bool controlsOwnAnimation;
+  final bool controlsOwnAnimation;
   final AnimationController? controller;
 
   @override

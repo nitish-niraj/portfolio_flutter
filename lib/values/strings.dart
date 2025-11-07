@@ -188,7 +188,7 @@ class StringConst {
   static const String FACEBOOK = "Facebook";
   static const String GITHUB = "Github";
 
-  //Certificate Urls
+  // Certificate Urls
   static const String CERT_1_URL = "#";
   static const String CERT_2_URL = "#";
   static const String CERT_3_URL = "#";
@@ -204,26 +204,26 @@ class StringConst {
   static const String CMU = "Carnegie Mellon University";
 
   //CertificationType
-  static const String CERT_1_TITLE = "Certificate Course in Yogic Practices for Better Living";
-  static const String CERT_1_DESC = "Banaras Hindu University (2022)";
+  static const String CERT_2_TITLE = "Certificate Course in Yogic Practices for Better Living";
+  static const String CERT_2_DESC = "Banaras Hindu University (2022)";
   
-  static const String CERT_2_TITLE = "TCS iON Career Edge - Young Professional";
-  static const String CERT_2_DESC = "Tata Consultancy Services";
+  static const String CERT_1_TITLE = "TCS iON Career Edge - Young Professional";
+  static const String CERT_1_DESC = "Tata Consultancy Services";
   
-  static const String CERT_3_TITLE = "Bachelor of Vocation in Computer Applications";
-  static const String CERT_3_DESC = "Banaras Hindu University (2024)";
+  static const String CERT_3_TITLE = "The Fundamentals of Digital Marketing";
+  static const String CERT_3_DESC = "Google Digital Unlocked (April 28, 2023) ";
   
-  static const String CERT_4_TITLE = "Python (Basic)";
-  static const String CERT_4_DESC = "HackerRank (November 6, 2025)";
+  static const String CERT_4_TITLE = "Certificate of Appreciation - Student Placement Coordinator ";
+  static const String CERT_4_DESC = "Career Guidance, Training & Placement Cell, BHU (2023-24) ";
   
-  static const String CERT_5_TITLE = "The Fundamentals of Digital Marketing";
-  static const String CERT_5_DESC = "Google Digital Unlocked (April 28, 2023)";
+  static const String CERT_5_TITLE = "Bachelor of Vocation in Computer Applications";
+  static const String CERT_5_DESC = "Banaras Hindu University (2024)";
   
-  static const String CERT_6_TITLE = "Certificate of Appreciation - Student Placement Coordinator";
-  static const String CERT_6_DESC = "Career Guidance, Training & Placement Cell, BHU (2023-24)";
+  static const String CERT_6_TITLE = "GfC 160 - 160 Days of Problem Solving";
+  static const String CERT_6_DESC = "GeeksforGeeks";
   
-  static const String CERT_7_TITLE = "GfC 160 - 160 Days of Problem Solving";
-  static const String CERT_7_DESC = "GeeksforGeeks";
+  static const String CERT_7_TITLE = "Python (Basic) ";
+  static const String CERT_7_DESC = "HackerRank (November 6, 2025) ";
 
   static const String CERT_NOTE = "Note: Some certifications are currently being updated and will be added soon.";
 

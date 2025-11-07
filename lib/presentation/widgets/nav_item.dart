@@ -48,7 +48,6 @@ class NavItem extends StatefulWidget {
 }
 
 class _NavItemState extends State<NavItem> {
-  bool _hovering = false;
   bool _hoveringUnselectedNavItemMobile = false;
 
   @override
@@ -65,9 +64,7 @@ class _NavItemState extends State<NavItem> {
   }
 
   void _mouseEnter(bool hovering) {
-    setState(() {
-      _hovering = hovering;
-    });
+    // Mouse enter/exit handling for potential future use
   }
 
   void _onMouseEnterUnselectedNavItemMobile(bool hovering) {
