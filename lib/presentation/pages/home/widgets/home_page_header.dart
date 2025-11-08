@@ -160,13 +160,15 @@ class _HomePageHeaderState extends State<HomePageHeader>
                             ),
                           ),
                           Positioned(
-                            right: screenWidth * 0.1,
-                            top: -screenWidth * 0.1,
-                            bottom: 0,
+                            right: screenWidth * 0.15,
+                            left: screenWidth * 0.15,
+                            top: screenWidth * 0.05,
+                            bottom: screenWidth * 0.05,
                             child: Center(
                               child: Image.asset(
                                 ImagePath.DEV_MEDITATE,
-                                width: screenWidth * 0.65,
+                                width: screenWidth * 0.55,
+                                fit: BoxFit.contain,
                               ),
                             ),
                           ),
@@ -216,13 +218,13 @@ class _HomePageHeaderState extends State<HomePageHeader>
                             ),
                           ),
                           Positioned(
-                            right: screenWidth * 0.055,
+                            right: screenWidth * 0.065,
                             top: -screenWidth * 0.04,
                             bottom: 0,
                             child: Center(
                               child: Image.asset(
                                 ImagePath.DEV_MEDITATE,
-                                width: screenWidth * 0.24,
+                                width: screenWidth * 0.22,
                               ),
                             ),
                           ),
@@ -469,7 +471,7 @@ class _AboutDevState extends State<AboutDev> {
 
       if (index < data.length - 1) {
         items.add(
-          Text('/', style: slashStyle),
+          Text(' | ', style: slashStyle),
         );
       }
     }

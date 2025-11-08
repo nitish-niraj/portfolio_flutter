@@ -92,6 +92,64 @@ class _CertificationCardState extends State<CertificationCard>
 
   @override
   Widget build(BuildContext context) {
+    // For mobile/tablet: Show card with image on top and text below
+    if (widget.isMobileOrTablet) {
+      return Container(
+        width: widget.width,
+        child: Card(
+          elevation: 2,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // Certificate image
+              ClipRRect(
+                borderRadius: BorderRadius.vertical(top: Radius.circular(4)),
+                child: Image.asset(
+                  widget.imageUrl,
+                  width: widget.width,
+                  height: widget.height * 0.7, // 70% for image
+                  fit: BoxFit.cover,
+                ),
+              ),
+              // Text content below
+              Container(
+                padding: EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      widget.title,
+                      textAlign: TextAlign.center,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: widget.titleTextStyle ??
+                          Theme.of(context).textTheme.titleMedium?.copyWith(
+                                color: AppColors.black,
+                                fontWeight: FontWeight.w600,
+                              ),
+                    ),
+                    SpaceH8(),
+                    Text(
+                      widget.subtitle,
+                      textAlign: TextAlign.center,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: widget.subtitleTextStyle ??
+                          Theme.of(context).textTheme.bodySmall?.copyWith(
+                                color: AppColors.grey700,
+                                fontSize: Sizes.TEXT_SIZE_14,
+                              ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    }
+    
+    // For desktop: Keep the hover effect
     return Container(
       width: widget.width,
       height: widget.height,
@@ -117,15 +175,6 @@ class _CertificationCardState extends State<CertificationCard>
                         child: _buildCardInfo(),
                       ),
                     )
-                  : Empty(),
-              //show info instantly if it is a mobile or tablet device
-              widget.isMobileOrTablet
-                  ? Container(
-                    width: widget.width,
-                    height: widget.height,
-                    color: widget.hoverColor.withOpacity(0.15),
-                    child: _buildCardInfo(),
-                  )
                   : Empty(),
             ],
           ),

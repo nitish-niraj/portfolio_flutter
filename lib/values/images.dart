@@ -23,25 +23,25 @@ class ImagePath {
   // Certifications
   static const String CERT_DIR = "$imageDir/certificate";
   
-  static const String CERT_1 = "$CERT_DIR/1674911052387.jpeg";
-  static const String CERT_2 = "$CERT_DIR/1677027712915.jpeg";
-  static const String CERT_3 = "$CERT_DIR/1682671051117.jpeg";
-  static const String CERT_4 = "$CERT_DIR/1712307782936.jpeg";
-  static const String CERT_5 = "$CERT_DIR/screenshot-1762518354407.png";
-  static const String CERT_6 = "$CERT_DIR/Screenshot_7-11-2025_181244_.jpeg";
-  static const String CERT_7 = "$CERT_DIR/Screenshot_7-11-2025_21317_.jpeg";
-  static const String CERT_8 = "$CERT_DIR/unnamed.png";
+  static const String CERT_1 = "$CERT_DIR/screenshot-1762518354407.png"; // B.Voc
+  static const String CERT_2 = "$CERT_DIR/Screenshot_7-11-2025_21317_.jpeg"; // Python
+  static const String CERT_3 = "$CERT_DIR/Screenshot_7-11-2025_181244_.jpeg"; // GeeksforGeeks
+  static const String CERT_4 = "$CERT_DIR/1682671051117.jpeg"; // Google Digital Marketing
+  static const String CERT_5 = "$CERT_DIR/1674911052387.jpeg"; // TCS iON
+  static const String CERT_6 = "$CERT_DIR/aws.png"; // AWS
+  static const String CERT_7 = "$CERT_DIR/1677027712915.jpeg"; // Yoga
+  static const String CERT_8 = "$CERT_DIR/1712307782936.jpeg"; // Student Placement Coordinator
 
   // Projects
 
   // PhotoGuard
   static const String PHOTO_GUARD_COVER =
-      "$projectsDir/photoguard/2.1.jpg";
+      "$projectsDir/photoguard/2.1.png";
   static const String PHOTO_GUARD_SCREENS =
-      "$projectsDir/photoguard/2.1.jpg";
+      "$projectsDir/photoguard/2.1.png";
 
   static const String PHOTO_GUARD_1 =
-      "$projectsDir/photoguard/2.1.jpg";
+      "$projectsDir/photoguard/2.1.png";
   static const String PHOTO_GUARD_2 =
       "$projectsDir/photoguard/2.2.jpg";
   static const String PHOTO_GUARD_3 =
@@ -49,7 +49,7 @@ class ImagePath {
   static const String PHOTO_GUARD_4 =
       "$projectsDir/photoguard/image (3).jpg";
   static const String PHOTO_GUARD_5 =
-      "$projectsDir/photoguard/Screenshot 2025-11-03 215948.png";
+      "$projectsDir/photoguard/Screenshot 2025-11-03 215948.jpg";
 
   // GPS Verifier
   static const String GPS_VERIFIER_COVER =

@@ -149,7 +149,7 @@ class Data {
       name: StringConst.HUGGINGFACE,
       iconData: FontAwesomeIcons.squarespace,
       url: StringConst.HUGGINGFACE_URL,
-      svgPath: 'assets/icons/huggingface_logo.svg',
+      svgPath: 'assets/icons/huggingface_icon.svg',
     ),
   ];
 
@@ -269,7 +269,7 @@ class Data {
       name: StringConst.HUGGINGFACE,
       iconData: FontAwesomeIcons.squarespace,
       url: StringConst.HUGGINGFACE_URL,
-      svgPath: 'assets/icons/huggingface_logo.svg',
+      svgPath: 'assets/icons/huggingface_icon.svg',
     ),
   ];
 
@@ -303,7 +303,7 @@ class Data {
       name: StringConst.HUGGINGFACE,
       iconData: FontAwesomeIcons.squarespace,
       url: StringConst.HUGGINGFACE_URL,
-      svgPath: 'assets/icons/huggingface_logo.svg',
+      svgPath: 'assets/icons/huggingface_icon.svg',
     ),
   ];
 
@@ -436,6 +436,13 @@ class Data {
       imageSize: 0.325,
       awardedBy: StringConst.CERT_7_DESC,
     ),
+    CertificationData(
+      title: StringConst.CERT_8_TITLE,
+      url: StringConst.CERT_8_URL,
+      image: ImagePath.CERT_8,
+      imageSize: 0.325,
+      awardedBy: StringConst.CERT_8_DESC,
+    ),
   ];
 
   static List<ExperienceData> experienceData = [
@@ -503,9 +510,11 @@ class Projects {
     portfolioDescription: StringConst.PHOTO_GUARD_DETAIL,
     isPublic: true,
     isOnPlayStore: false,
+    isLive: true,
     technologyUsed: "Python, OpenCV, Machine Learning",
     gitHubUrl: StringConst.PHOTO_GUARD_GITHUB_URL,
     playStoreUrl: StringConst.PHOTO_GUARD_PLAYSTORE_URL,
+    webUrl: StringConst.PHOTO_GUARD_WEB_URL,
   );
 
   static ProjectItemData GPS_VERIFIER = ProjectItemData(
@@ -529,9 +538,11 @@ class Projects {
     portfolioDescription: StringConst.GPS_VERIFIER_DETAIL,
     isPublic: true,
     isOnPlayStore: false,
+    isLive: true,
     technologyUsed: "Python, OpenCV, Computer Vision, OCR",
     gitHubUrl: StringConst.GPS_VERIFIER_GITHUB_URL,
     playStoreUrl: StringConst.GPS_VERIFIER_PLAYSTORE_URL,
+    webUrl: StringConst.GPS_VERIFIER_WEB_URL,
   );
 
   static ProjectItemData HOUSE_PRICE = ProjectItemData(
@@ -558,9 +569,11 @@ class Projects {
     portfolioDescription: StringConst.HOUSE_PRICE_DETAIL,
     isPublic: true,
     isOnPlayStore: false,
+    isLive: true,
     technologyUsed: "Python, Random Forest, Scikit-learn, Pandas",
     gitHubUrl: StringConst.HOUSE_PRICE_GITHUB_URL,
     playStoreUrl: StringConst.HOUSE_PRICE_PLAYSTORE_URL,
+    webUrl: StringConst.HOUSE_PRICE_WEB_URL,
   );
 
   static ProjectItemData URGENCY_CHECKER = ProjectItemData(
@@ -583,9 +596,11 @@ class Projects {
     portfolioDescription: StringConst.URGENCY_CHECKER_DETAIL,
     isPublic: true,
     isOnPlayStore: false,
+    isLive: true,
     technologyUsed: "Python, FastAPI, TF-IDF, NLP, YOLO, Computer Vision",
     gitHubUrl: StringConst.URGENCY_CHECKER_GITHUB_URL,
     playStoreUrl: StringConst.URGENCY_CHECKER_PLAYSTORE_URL,
+    webUrl: StringConst.URGENCY_CHECKER_WEB_URL,
   );
 
   static ProjectItemData RESULT_KHOJ = ProjectItemData(

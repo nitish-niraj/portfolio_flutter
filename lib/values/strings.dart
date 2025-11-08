@@ -28,7 +28,7 @@ class StringConst {
   static const String SEE_MY_WORKS = "See my works";
   static const String SCROLL_DOWN = "Scroll Down";
   static const String CRAFTED_WITH_LOVE = "Crafted with love.";
-  static const String SELECTION = "Here is selection of my recent works.";
+  static const String SELECTION = "Here is collection of my recent works.";
   static const String THERES_MORE = "There's more";
   static const String VIEW_ALL_PROJECTS = "view all projects";
 
@@ -198,6 +198,7 @@ class StringConst {
   static const String CERT_5_URL = "#";
   static const String CERT_6_URL = "#";
   static const String CERT_7_URL = "#";
+  static const String CERT_8_URL = "#";
 
   //AwardedBy
   static const String VARIOUS_INSTITUTIONS = "Various Institutions";
@@ -206,26 +207,29 @@ class StringConst {
   static const String CMU = "Carnegie Mellon University";
 
   //CertificationType
-  static const String CERT_2_TITLE = "Certificate Course in Yogic Practices for Better Living";
-  static const String CERT_2_DESC = "Banaras Hindu University (2022)";
+  static const String CERT_1_TITLE = "Bachelor of Vocation in Computer Applications";
+  static const String CERT_1_DESC = "Banaras Hindu University (2024)";
   
-  static const String CERT_1_TITLE = "TCS iON Career Edge - Young Professional";
-  static const String CERT_1_DESC = "Tata Consultancy Services";
+  static const String CERT_2_TITLE = "Python (Basic) ";
+  static const String CERT_2_DESC = "HackerRank (November 6, 2025) ";
   
-  static const String CERT_3_TITLE = "The Fundamentals of Digital Marketing";
-  static const String CERT_3_DESC = "Google Digital Unlocked (April 28, 2023) ";
+  static const String CERT_3_TITLE = "GfC 160 - 160 Days of Problem Solving";
+  static const String CERT_3_DESC = "GeeksforGeeks";
   
-  static const String CERT_4_TITLE = "Certificate of Appreciation - Student Placement Coordinator ";
-  static const String CERT_4_DESC = "Career Guidance, Training & Placement Cell, BHU (2023-24) ";
+  static const String CERT_4_TITLE = "The Fundamentals of Digital Marketing";
+  static const String CERT_4_DESC = "Google Digital Unlocked (April 28, 2023) ";
   
-  static const String CERT_5_TITLE = "Bachelor of Vocation in Computer Applications";
-  static const String CERT_5_DESC = "Banaras Hindu University (2024)";
+  static const String CERT_5_TITLE = "TCS iON Career Edge - Young Professional";
+  static const String CERT_5_DESC = "Tata Consultancy Services";
   
-  static const String CERT_6_TITLE = "GfC 160 - 160 Days of Problem Solving";
-  static const String CERT_6_DESC = "GeeksforGeeks";
+  static const String CERT_6_TITLE = "AWS Certified Cloud Practitioner";
+  static const String CERT_6_DESC = "Amazon Web Services (AWS)";
   
-  static const String CERT_7_TITLE = "Python (Basic) ";
-  static const String CERT_7_DESC = "HackerRank (November 6, 2025) ";
+  static const String CERT_7_TITLE = "Certificate Course in Yogic Practices for Better Living";
+  static const String CERT_7_DESC = "Banaras Hindu University (2022)";
+  
+  static const String CERT_8_TITLE = "Certificate of Appreciation - Student Placement Coordinator ";
+  static const String CERT_8_DESC = "Career Guidance, Training & Placement Cell, BHU (2023-24) ";
 
   static const String CERT_NOTE = "Note: Some certifications are currently being updated and will be added soon.";
 
@@ -384,8 +388,9 @@ class StringConst {
   static const String PHOTO_GUARD_DETAIL =
       "PhotoGuard is an intelligent mobile photo validation API designed for civic documentation. It provides real-time quality control via a REST API that scores photos based on a comprehensive weighted pipeline: Blur Detection (25%), Resolution Analysis (25%), Brightness Assessment (20%), Exposure Evaluation (15%), and Metadata Verification (15%). The system uses a 65% pass threshold with partial credit scoring to maintain an optimal 35-40% acceptance rate, ensuring only high-quality civic documentation photos are approved. Built with Python, OpenCV, and machine learning algorithms for robust image quality assessment.";
   static const String PHOTO_GUARD_PLAYSTORE_URL = "";
+  static const String PHOTO_GUARD_WEB_URL = "https://huggingface.co/spaces/niru-nny/photoguard-api";
   static const String PHOTO_GUARD_GITHUB_URL =
-      "https://github.com/nitish-niraj/photoguard";
+      "https://github.com/nitish-niraj/civic-photo-quality-control";
 
   static const String GPS_VERIFIER = "GPS Verifier";
   static const String GPS_VERIFIER_PLATFORM = "Python / Computer Vision";
@@ -395,6 +400,7 @@ class StringConst {
   static const String GPS_VERIFIER_DETAIL =
       "GPS Verifier is a modern, multi-method GPS validation system designed for Lovely Professional University (LPU) campus. This sophisticated system extracts GPS coordinates from images using multiple techniques including EXIF data extraction, OCR (Optical Character Recognition), pattern recognition, and WhatsApp overlay detection. The extracted coordinates are then validated against predefined campus boundaries to ensure location authenticity. Built with Python, OpenCV, and advanced computer vision algorithms, GPS Verifier provides a robust solution for location verification in educational institutions.";
   static const String GPS_VERIFIER_PLAYSTORE_URL = "";
+  static const String GPS_VERIFIER_WEB_URL = "https://niru-nny-gps-verifier-lpu.hf.space/ui";
   static const String GPS_VERIFIER_GITHUB_URL =
       "https://github.com/nitish-niraj/GPS-verification";
 
@@ -406,6 +412,7 @@ class StringConst {
   static const String HOUSE_PRICE_DETAIL =
       "A machine learning model for predicting California house prices based on various features like location, age, size, and proximity to the ocean. This model uses a Random Forest Regressor trained on the California Housing dataset and achieves strong predictive performance. The project includes comprehensive exploratory data analysis (EDA), feature importance analysis, residuals analysis, and SHAP (SHapley Additive exPlanations) interpretability techniques for understanding model predictions.";
   static const String HOUSE_PRICE_PLAYSTORE_URL = "";
+  static const String HOUSE_PRICE_WEB_URL = "https://huggingface.co/spaces/niru-nny/house-price-prediction-demo";
   static const String HOUSE_PRICE_GITHUB_URL =
       "https://github.com/nitish-niraj/house-price-prediction";
 
@@ -417,6 +424,7 @@ class StringConst {
   static const String URGENCY_CHECKER_DETAIL =
       "A sophisticated multimodal system that prioritizes citizen-reported civic issues by combining text and image evidence. The system analyzes user descriptions and photos using NLP (TF-IDF + engineered features) and computer vision to produce ranked urgency levels (HIGH / MEDIUM / LOW) with a numeric 1-10 urgency score, confidence metrics, human-readable reasoning, recommended department routing, and estimated response time. The service is exposed via a FastAPI backend with interactive API documentation (/docs) and a modern responsive web UI. Key features include multimodal fusion of text and image analysis, lightweight CPU-friendly models, CORS-enabled API, and Docker-ready packaging. The system includes YOLO integration support for advanced object detection in civic infrastructure imagery. Example use case: A citizen uploads a photo of a cracked road with a description - the system returns HIGH priority with reasoning (e.g., 'large cracks blocking hospital access'), confidence score, and recommended emergency response routing.";
   static const String URGENCY_CHECKER_PLAYSTORE_URL = "";
+  static const String URGENCY_CHECKER_WEB_URL = "https://huggingface.co/spaces/niru-nny/urgency-checker";
   static const String URGENCY_CHECKER_GITHUB_URL =
       "https://github.com/nitish-niraj/urgency-checker";
 
