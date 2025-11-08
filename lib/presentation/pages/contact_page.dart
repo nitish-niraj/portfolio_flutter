@@ -47,19 +47,19 @@ class _ContactPageState extends State<ContactPage>
 
   @override
   void initState() {
+    super.initState();
     _controller = AnimationController(
       vsync: this,
       duration: Animations.slideAnimationDurationLong,
     );
     _slideAnimation =
-        Tween<Offset>(begin: Offset(0, 1), end: Offset(0, 0)).animate(
+        Tween<Offset>(begin: const Offset(0, 1), end: const Offset(0, 0)).animate(
       CurvedAnimation(
         parent: _controller,
-        curve: Interval(0.6, 1.0, curve: Curves.ease),
+        curve: const Interval(0.6, 1.0, curve: Curves.ease),
       ),
     );
     emailBloc = getIt<EmailBloc>();
-    super.initState();
   }
 
   @override

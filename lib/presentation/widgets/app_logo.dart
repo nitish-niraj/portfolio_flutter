@@ -25,6 +25,10 @@ class AppLogo extends StatelessWidget {
         height: fontSize,
         width: fontSize,
         fit: BoxFit.contain,
+        // Optimize image loading for better mobile performance
+        cacheWidth: fontSize != null ? (fontSize! * 2).toInt() : null,
+        cacheHeight: fontSize != null ? (fontSize! * 2).toInt() : null,
+        filterQuality: FilterQuality.medium,
       );
     }
     

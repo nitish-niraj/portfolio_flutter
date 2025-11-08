@@ -24,16 +24,15 @@ class _WorksPageState extends State<WorksPage> with TickerProviderStateMixin {
 
   @override
   void initState() {
+    super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 200),
+      duration: const Duration(milliseconds: 200),
     );
     _headingTextController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 1200),
+      duration: const Duration(milliseconds: 1200),
     );
-
-    super.initState();
   }
 
   @override
@@ -74,6 +73,8 @@ class _WorksPageState extends State<WorksPage> with TickerProviderStateMixin {
         physics: const BouncingScrollPhysics(
           parent: AlwaysScrollableScrollPhysics(),
         ),
+        // Improve mobile scroll performance
+        cacheExtent: 1000,
         children: [
           PageHeader(
             headingText: StringConst.WORKS,

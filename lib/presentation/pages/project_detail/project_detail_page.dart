@@ -51,6 +51,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
 
   @override
   void initState() {
+    super.initState();
     _waveController = AnimationController(
       vsync: this,
       duration: Animations.waveDuration,
@@ -75,7 +76,6 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
       duration: Animations.slideAnimationDurationShort,
     );
     _waveController.forward();
-    super.initState();
   }
 
   @override

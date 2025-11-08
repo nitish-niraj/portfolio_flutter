@@ -37,10 +37,11 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
 
   @override
   void initState() {
+    super.initState();
     _arguments = NavigationArguments();
     _viewProjectsController = AnimationController(
       vsync: this,
-      duration: Duration(milliseconds: 300),
+      duration: const Duration(milliseconds: 300),
     );
     _slideTextController = AnimationController(
       vsync: this,
@@ -50,8 +51,6 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       vsync: this,
       duration: Animations.slideAnimationDurationLong,
     );
-   
-    super.initState();
   }
 
   void getArguments() {
@@ -116,6 +115,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         physics: const BouncingScrollPhysics(
           parent: AlwaysScrollableScrollPhysics(),
         ),
+        // Add cacheExtent for better mobile scroll performance
+        cacheExtent: 1000,
         children: [
           
           HomePageHeader(
@@ -262,25 +263,27 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     int margin = subHeight * (data.length - 1);
     for (int index = data.length - 1; index >= 0; index--) {
       items.add(
-        Container(
-          margin: EdgeInsets.only(top: margin.toDouble()),
-          child: ProjectItemLg(
-            projectNumber: index + 1 > 9 ? "${index + 1}" : "0${index + 1}",
-            imageUrl: data[index].image,
-            projectItemheight: projectHeight.toDouble(),
-            subheight: subHeight.toDouble(),
-            backgroundColor: AppColors.accentColor2.withValues(alpha: 0.35),
-            title: data[index].title.toLowerCase(),
-            subtitle: data[index].category,
-            containerColor: data[index].primaryColor,
-            onTap: () {
-              Functions.navigateToProject(
-                context: context,
-                dataSource: data,
-                currentProject: data[index],
-                currentProjectIndex: index,
-              );
-            },
+        RepaintBoundary(
+          child: Container(
+            margin: EdgeInsets.only(top: margin.toDouble()),
+            child: ProjectItemLg(
+              projectNumber: index + 1 > 9 ? "${index + 1}" : "0${index + 1}",
+              imageUrl: data[index].image,
+              projectItemheight: projectHeight.toDouble(),
+              subheight: subHeight.toDouble(),
+              backgroundColor: AppColors.accentColor2.withValues(alpha: 0.35),
+              title: data[index].title.toLowerCase(),
+              subtitle: data[index].category,
+              containerColor: data[index].primaryColor,
+              onTap: () {
+                Functions.navigateToProject(
+                  context: context,
+                  dataSource: data,
+                  currentProject: data[index],
+                  currentProjectIndex: index,
+                );
+              },
+            ),
           ),
         ),
       );
@@ -298,25 +301,27 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
 
     for (int index = 0; index < data.length; index++) {
       items.add(
-        Container(
-          child: ProjectItemSm(
-            projectNumber: index + 1 > 9 ? "${index + 1}" : "0${index + 1}",
-            imageUrl: data[index].image,
-            title: data[index].title.toLowerCase(),
-            subtitle: data[index].category,
-            containerColor: data[index].primaryColor,
-            onTap: () {
-              Functions.navigateToProject(
-                context: context,
-                dataSource: data,
-                currentProject: data[index],
-                currentProjectIndex: index,
-              );
-            },
+        RepaintBoundary(
+          child: Container(
+            child: ProjectItemSm(
+              projectNumber: index + 1 > 9 ? "${index + 1}" : "0${index + 1}",
+              imageUrl: data[index].image,
+              title: data[index].title.toLowerCase(),
+              subtitle: data[index].category,
+              containerColor: data[index].primaryColor,
+              onTap: () {
+                Functions.navigateToProject(
+                  context: context,
+                  dataSource: data,
+                  currentProject: data[index],
+                  currentProjectIndex: index,
+                );
+              },
+            ),
           ),
         ),
       );
-      items.add(CustomSpacer(
+      items.add(const CustomSpacer(
         heightFactor: 0.10,
       ));
     }
