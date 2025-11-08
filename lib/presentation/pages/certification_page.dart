@@ -2,7 +2,7 @@
 
 import 'package:nitish_kumar_portfolio/core/layout/adaptive.dart';
 import 'package:nitish_kumar_portfolio/presentation/pages/widgets/page_header.dart';
-import 'package:nitish_kumar_portfolio/presentation/pages/widgets/simple_footer.dart';
+import 'package:nitish_kumar_portfolio/presentation/pages/widgets/animated_footer.dart';
 import 'package:nitish_kumar_portfolio/presentation/widgets/certification_card.dart';
 import 'package:nitish_kumar_portfolio/presentation/widgets/content_area.dart';
 import 'package:nitish_kumar_portfolio/presentation/widgets/custom_spacer.dart';
@@ -162,7 +162,7 @@ class _CertificationPageState extends State<CertificationPage>
             ),
           ),
           CustomSpacer(heightFactor: 0.15),
-          SimpleFooter(),
+          AnimatedFooter(),
         ],
       ),
     );

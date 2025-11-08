@@ -8,14 +8,26 @@ class AppLogo extends StatelessWidget {
     this.titleColor = AppColors.black,
     this.titleStyle,
     this.fontSize = 60,
+    this.useImage = true,
   }) : super(key: key);
 
   final String title;
   final TextStyle? titleStyle;
   final Color titleColor;
   final double? fontSize;
+  final bool useImage;
+  
   @override
   Widget build(BuildContext context) {
+    if (useImage) {
+      return Image.asset(
+        ImagePath.NIRAJ_LOGO,
+        height: fontSize,
+        width: fontSize,
+        fit: BoxFit.contain,
+      );
+    }
+    
     TextTheme textTheme = Theme.of(context).textTheme;
     return Text(
       title,

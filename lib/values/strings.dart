@@ -107,6 +107,9 @@ class StringConst {
   static const String LAUNCH_APP = "Launch App";
   static const String SOURCE_CODE = "Source Code";
   static const String NEXT_PROJECT = "Next Project";
+  static const String PREVIOUS_PROJECT = "Previous Project";
+  static const String GOTO_EXPERIENCE = "Go to Experience";
+  static const String GOTO_HOME = "Back to Home";
 
   static const String VIEW = "View";
   static const String COMING_SOON = "COMING SOON !!";

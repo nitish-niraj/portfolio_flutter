@@ -128,7 +128,7 @@ class _HomePageHeaderState extends State<HomePageHeader>
 
     return Container(
       width: screenWidth,
-      color: AppColors.accentColor2.withOpacity(0.35),
+      color: AppColors.accentColor2.withValues(alpha: 0.35),
       child: Stack(
         children: [
           Container(

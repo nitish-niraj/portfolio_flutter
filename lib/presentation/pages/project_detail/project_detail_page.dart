@@ -99,6 +99,17 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
     return projectDetails;
   }
 
+  bool hasPreviousProject() {
+    return projectDetails.currentIndex > 0;
+  }
+
+  ProjectItemData? getPreviousProject() {
+    if (hasPreviousProject()) {
+      return projectDetails.dataSource[projectDetails.currentIndex - 1];
+    }
+    return null;
+  }
+
   @override
   Widget build(BuildContext context) {
     final args = getArguments();
@@ -176,8 +187,8 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Colors.black.withOpacity(0.0),
-                        Colors.black.withOpacity(0.3),
+                        Colors.black.withValues(alpha: 0.0),
+                        Colors.black.withValues(alpha: 0.3),
                       ],
                     ),
                   ),
@@ -190,7 +201,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
                     child: Container(
                       padding: EdgeInsets.symmetric(horizontal: 40, vertical: 30),
                       decoration: BoxDecoration(
-                        color: Colors.black.withOpacity(0.4),
+                        color: Colors.black.withValues(alpha: 0.4),
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Column(
@@ -268,6 +279,19 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
                     child: NextProject(
                       width: contentAreaWidth,
                       nextProject: projectDetails.nextProject!,
+                      previousProject: getPreviousProject(),
+                      hasPreviousProject: hasPreviousProject(),
+                      navigateToPreviousProject: hasPreviousProject()
+                          ? () {
+                              Functions.navigateToProject(
+                                context: context,
+                                dataSource: projectDetails.dataSource,
+                                currentProject:
+                                    projectDetails.dataSource[projectDetails.currentIndex - 1],
+                                currentProjectIndex: projectDetails.currentIndex - 1,
+                              );
+                            }
+                          : null,
                       navigateToNextProject: () {
                         Functions.navigateToProject(
                           context: context,
@@ -314,7 +338,7 @@ class _ProjectDetailPageState extends State<ProjectDetailPage>
                 borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.1),
+                    color: Colors.black.withValues(alpha: 0.1),
                     blurRadius: 20,
                     offset: Offset(0, 10),
                   ),

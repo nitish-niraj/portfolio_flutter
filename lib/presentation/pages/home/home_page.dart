@@ -269,7 +269,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             imageUrl: data[index].image,
             projectItemheight: projectHeight.toDouble(),
             subheight: subHeight.toDouble(),
-            backgroundColor: AppColors.accentColor2.withOpacity(0.35),
+            backgroundColor: AppColors.accentColor2.withValues(alpha: 0.35),
             title: data[index].title.toLowerCase(),
             subtitle: data[index].category,
             containerColor: data[index].primaryColor,

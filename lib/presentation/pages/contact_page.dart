@@ -1,7 +1,7 @@
 import 'package:nitish_kumar_portfolio/core/utils/extensions.dart';
 import 'package:nitish_kumar_portfolio/core/layout/adaptive.dart';
 import 'package:nitish_kumar_portfolio/infrastructure/bloc/email_bloc.dart';
-import 'package:nitish_kumar_portfolio/presentation/pages/widgets/simple_footer.dart';
+import 'package:nitish_kumar_portfolio/presentation/pages/widgets/animated_footer.dart';
 import 'package:nitish_kumar_portfolio/presentation/widgets/aerium_button.dart';
 import 'package:nitish_kumar_portfolio/presentation/widgets/animated_positioned_text.dart';
 import 'package:nitish_kumar_portfolio/presentation/widgets/animated_text_slide_box_transition.dart';
@@ -370,7 +370,7 @@ class _ContactPageState extends State<ContactPage>
                   ),
                 ),
                 CustomSpacer(heightFactor: 0.15),
-                SimpleFooter(),
+                AnimatedFooter(),
               ],
             ),
           );

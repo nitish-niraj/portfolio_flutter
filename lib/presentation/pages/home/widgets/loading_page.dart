@@ -6,7 +6,7 @@ import 'package:nitish_kumar_portfolio/values/values.dart';
 import 'package:flutter/material.dart';
 
 const double lineHeight = 2;
-Color defaultLineColor = AppColors.accentColor2.withOpacity(0.35);
+Color defaultLineColor = AppColors.accentColor2.withValues(alpha: 0.35);
 
 class LoadingHomePageAnimation extends StatefulWidget {
   static const String loadingPageRoute = StringConst.LOADING_PAGE;
